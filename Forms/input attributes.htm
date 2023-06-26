@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Input Attributes</title>
+    <link rel="shortcut icon" href="../images/1662214951.ico" />
+    <style>
+      body {
+        background-color: gray;
+      }
+      form {
+        border: 5px dotted rgb(59, 58, 58);
+        display: inline-block;
+        padding: 20px 20px;
+        border-radius: 10px;
+        margin: 10px;
+
+        width: 400px;
+      }
+      input {
+        width: 100%;
+        height: 30px;
+      }
+    </style>
+  </head>
+  <body dir="rtl">
+    <form>
+      <label for="fname">نام </label><br />
+      <input type="text" id="fname" name="fn" required /><br /><br />
+      <label for="lname">نام خانوادگی</label><br />
+      <input type="text" id="lname" name="ln" required /><br /><br />
+      <label for="gg">معدل</label>
+      <input
+        type="number"
+        id="gg"
+        name="score"
+        min="0"
+        max="20"
+        required
+      /><br /><br />
+      <label for="fd">کد ملی</label>
+      <input
+        type="text"
+        id="fd"
+        name="fd"
+        maxlength="10"
+        autocomplete="off"
+        required
+      /><br /><br />
+      <label for="fi">عکس 4*3</label>
+      <input type="file" id="fi" name="photo" multiple required /><br /><br />
+      <label for="date">تاریخ تولد :</label>
+      <input
+        type="date"
+        id="date"
+        name="date"
+        min="1990-01-01"
+        max="2030-12-12"
+        required
+      /><br /><br />
+      <label for="email">ایمیل</label>
+
+      <input
+        type="email"
+        id="email"
+        name="email"
+        value="Forexample@gmail.com"
+      />
+      <br /><br />
+      <label for="pas">رمز عبور</label><br />
+      <input type="password" id="pas" name="password" required /><br /><br />
+      <input type="submit" value="ثبت نام " />
+      <input
+        type="reset"
+        value="بازنشانی اطلاعات"
+        autofocus
+      /><br /><br /><br />
+      <input
+        type="text"
+        value="در صورت هرگونه مشکل در سایت با پشتیبانی تماس حاصل فرمایید "
+        readonly
+      />
+    </form>
+    <h1>برای مثال :</h1>
+    <form>
+      <label for="fname">نام </label><br />
+      <input
+        type="text"
+        id="fname"
+        name="fn"
+        value="علیرضا"
+        disabled
+      /><br /><br />
+      <label for="lname">نام خانوادگی</label><br />
+      <input
+        type="text"
+        id="lname"
+        name="ln"
+        value="ضیغم پور"
+        disabled
+      /><br /><br />
+      <label for="email">ایمیل</label><br />
+      <input
+        type="email"
+        id="email"
+        name="email"
+        value="Zeyghampuuralireza@gmail.com"
+        disabled
+      />
+      <br /><br />
+      <label for="pas">رمز عبور</label><br />
+      <input type="password" id="pas" name="password" disabled /><br /><br />
+      <input type="submit" value="ثبت نام " />
+      <input type="reset" value="بازنشانی اطلاعات" autofocus />
+    </form>
+  </body>
+</html>

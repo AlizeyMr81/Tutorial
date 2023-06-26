@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table borders</title>
+    <link rel="shortcut icon" href="../images/logo_1.ico" />
+    <style>
+      table,
+      td,
+      th {
+        border: 2px solid hsl(232, 50%, 50%);
+        border-collapse: collapse;
+        padding: 10px;
+        border-style: dashed;
+      }
+      td {
+        border: 2px solid rgb(105, 0, 128);
+        border-style: dashed;
+        background-color: hsl(170, 50%, 50%);
+        color: #0909fd;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      }
+      th {
+        border: 2px solid red;
+        border-style: dashed;
+        background-color: rgb(208, 255, 0);
+        color: #fd09ed;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <table style="height:600px; width: 100%;">
+      <tr>
+        <th>Food</th>
+        <th>sport</th>
+        <th>Fruit</th>
+      </tr>
+      <tr>
+        <td>chicken</td>
+        <td>football</td>
+        <td>apple</td>
+      </tr>
+      <tr>
+        <td>kebab</td>
+        <td>basketball</td>
+        <td>orange</td>
+      </tr>
+      <tr>
+        <td>pizza</td>
+        <td>swim</td>
+        <td>watermelon</td>
+      </tr>
+      <tr>
+        <td>rice</td>
+        <td>ride horse</td>
+        <td>banana</td>
+      </tr>
+    </table>
+  </body>
+</html>

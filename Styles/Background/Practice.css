@@ -1,0 +1,22 @@
+h1,
+p {
+  text-align: center;
+}
+p {
+  font-size: 18px;
+}
+
+.main {
+  height: 550px;
+  background-image: url("../images/ironman-vs-batman-1068x596.jpg");
+  background-attachment: fixed;
+  background-repeat: repeat-x;
+  background-position: center center;
+}
+.box {
+  height: 350px;
+  background-image: url("../images/com.bts.wallpapers.bts.army.wallpapersfree.kpop.wallpapers-51ca5e4c-c05c-4bd0-b09b-1f8e2f7cde46.jpeg");
+  background-repeat: repeat-x;
+  background-attachment: fixed;
+  background-position: center center;
+}

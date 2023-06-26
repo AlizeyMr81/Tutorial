@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+}
+body {
+  font-family: Poppins;
+}
+div {
+  background-color: #c2185b;
+  width: 600px;
+  height: 200px;
+  border-radius: 15px;
+  margin: 20px;
+  padding: 5px;
+  color: #ffffff;
+}
+
+p {
+  text-indent: 45px;
+  /* letter-spacing: 5px; */
+  /* word-spacing: 5px; */
+  /* white-space: break-spaces; */
+  line-height: 1.8;
+  margin-left: 10px;
+}
+h1 {
+  text-shadow: 2px 2px 5px blue;
+  margin-bottom: 18px;
+  margin-left: 10px;
+}

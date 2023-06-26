@@ -1,0 +1,27 @@
+div.box1 {
+  height: 50px;
+  background-color: #b71c1c;
+  border: 2px solid #546e7a;
+}
+
+div.box2 {
+  height: 50px;
+  background-color: #ffff00;
+  border: 2px solid #546e7a;
+}
+.box1 {
+  /* for all sides */
+  margin: 20px;
+
+  /* margin: value(top , bottom) value(right , left) ; */
+  margin: 20px 40px;
+
+  /* margin:value(top) value(right , left) value(bottom) ; */
+  margin: 20px 40px 20px;
+
+  /* Individual Sides */
+  margin-right: 20px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  margin-left: 30px;
+}

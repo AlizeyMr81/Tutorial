@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Elements</title>
+    <link rel="shortcut icon" href="../images/1662214951.ico" />
+  </head>
+  <body>
+    <p>Choose your favorite color</p>
+    <form>
+      <label for="fa13">Colors :</label>
+      <select id="fa13" name="fa13" size="3" multiple>
+        <option value="red">Red</option>
+        <option value="yellow" selected>Yellow</option>
+        <option value="pink">Pink</option>
+        <option value="black">Black</option>
+        <option value="Blue">Blue</option>
+        <option value="Brown">Brown</option>
+        <option value="Purple">Purple</option>
+        <option value="White">white</option>
+        <option value="Orange">Orange</option>
+      </select>
+      <input type="submit" />
+    </form>
+    <h1>textarea tag</h1>
+    <form>
+      <textarea name="message" rows="20" cols="40">
+Hello, I am Alireza</textarea
+      >
+    </form>
+    <br />
+    <form autocomplete="on">
+      <fieldset dir="rtl">
+        <legend>اطلاعات شخصی :</legend>
+        <label for="a1">نام :</label>
+        <input type="text" id="a1" name="n" /><br /><br />
+        <label for="a2">نام خانوادگی</label>
+        <input type="text" id="a2" name="nn" /><br /><br />
+        <label for="a3">محل تولد :</label>
+        <input type="text" id="a3" name="born" />
+      </fieldset>
+      <br />
+      <fieldset dir="rtl">
+        <legend>اطلاعات تحصیلی :</legend>
+        <labe for="a4">محل تحصیل</labe>
+        <input type="text" id="a4" name="school" /><br /><br />
+        <label for="a5">مقطع تحصیلی </label>
+        <input type="text" id="a5" name="place" />
+      </fieldset>
+      <br />
+      <input type="submit" />
+    </form>
+    <br />
+    <form dir="rtl">
+      <label for="qq">Choose your favorite Team :</label><br /><br />
+      <input list="teams" id="qq" name="team" />
+      <datalist id="teams">
+        <option value="Barcelona">Barcelona</option>
+        <option value="Chelsea">Chelsea</option>
+        <option value="Man City">Man City</option>
+        <option value="Dortmund">Dortmund</option>
+        <option value="Ajax">Ajax</option>
+      </datalist>
+      <input type="submit" />
+    </form>
+  </body>
+</html>

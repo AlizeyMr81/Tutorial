@@ -1,0 +1,36 @@
+.box1 {
+  height: 50px;
+  background-color: #b71c1c;
+  border: 2px solid #546e7a;
+  margin-bottom: 20px;
+  border-right-color: #00e5ff;
+  border-right-width: 5px;
+  /* Use padding property */
+  padding-right: 10px;
+  padding-bottom: 30px;
+}
+.box2 {
+  height: 50px;
+  background-color: #ffff00;
+  border: 2px solid #546e7a;
+  border-right-color: #00e5ff;
+  border-right-width: 5px;
+
+  /* Individual sides */
+  padding-top: 20px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 10px;
+
+  /* Use shorthand */
+  padding: 20px 30px 50px 10px;
+}
+.box3 {
+  width: 300px;
+  background-color: aqua;
+  border: 2px solid red;
+  padding-right: 100px;
+
+  /* Use box-sizing */
+  box-sizing: border-box;
+}

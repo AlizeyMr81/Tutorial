@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+}
+
+div {
+  background-color: #263238;
+  color: #fff;
+  margin: 20px 10px 0px 10px;
+  padding: 20px;
+  border-radius: 15px;
+  width: 300px;
+  height: 200px;
+}
+h1 {
+  margin-bottom: 12px;
+  text-align: center;
+}
+p.main {
+  text-align: justify;
+  margin-bottom: 10px;
+}
+input {
+  direction: ltr;
+  text-align: right;
+}
+p {
+  direction: ltr;
+}
+img {
+  vertical-align: -5px;
+}
+
+/*
+text-align
+text-align-last
+direction
+unicode-bidi
+vertical-align
+*/

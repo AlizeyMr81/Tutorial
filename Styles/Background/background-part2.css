@@ -1,0 +1,20 @@
+/* background-image */
+body {
+  background-image: url("../images/girls-2.png");
+}
+/* background-repeat */
+body {
+  background-repeat: no-repeat;
+}
+/* background-position */
+body {
+  background-position: 25em 20em;
+}
+/* backgrond-attachment */
+body {
+  background-attachment: fixed;
+}
+/* background (shorthand property) */
+body {
+  /* background : url("../images/girls-2.png") no-repeat fixed 25em 20em */
+}

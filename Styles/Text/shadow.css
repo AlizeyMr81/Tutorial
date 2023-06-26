@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+}
+body {
+  font-family: Poppins;
+}
+div {
+  background-color: #c2185b;
+  width: 400px;
+  height: 200px;
+  border-radius: 15px;
+  margin: 20px;
+  padding: 5px;
+  color: #ffffff;
+}
+p {
+  margin-top: 2px;
+}
+h1 {
+  text-shadow: 2px 2px 5px blue;
+}
