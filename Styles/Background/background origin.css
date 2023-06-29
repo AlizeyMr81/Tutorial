@@ -6,7 +6,7 @@ p.one {
   border: 2px dashed blue;
   padding: 15px;
   font-size: large;
-  background-image: url("../images/girls-2.png");
+  background-image: url("../../images/girls-2.png");
   background-repeat: no-repeat;
   background-origin: border-box;
 }
@@ -14,7 +14,7 @@ p.two {
   border: 2px dashed blue;
   padding: 15px;
   font-size: large;
-  background-image: url("../images/girls-2.png");
+  background-image: url("../../images/girls-2.png");
   background-repeat: no-repeat;
   background-origin: padding-box;
 }
@@ -22,6 +22,6 @@ p.three {
   border: 2px dashed blue;
   padding: 15px;
   font-size: large;
-  background-image: url("../images/girls-2.png");
+  background-image: url("../../images/girls-2.png");
   background-origin: content-box;
 }
