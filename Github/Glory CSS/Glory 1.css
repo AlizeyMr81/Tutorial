@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+}
+body {
+  background-image: url("../../images/ranger-4df6c1b6.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+#La {
+  color: rgba(41, 12, 128, 0.8);
+  margin: 20px 0px 10px 20px;
+}
+table {
+  margin-left: 10px;
+}
+table,
+th,
+td {
+  border: 2px solid rgba(248, 98, 123, 0.6);
+  border-collapse: collapse;
+  text-align: left;
+}
+td:hover {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 20px;
+}
+tr:nth-child(even) {
+  background-color: rgba(87, 250, 231, 0.2);
+}
+tr:hover {
+  background-color: rgba(250, 242, 15, 0.2);
+}
+th,
+td {
+  padding-left: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+th:nth-child(even),
+td:nth-child(even) {
+  background-color: rgba(87, 250, 231, 0.1);
+}
+a:link,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  background-color: #00ff0012;
+  padding: 10px;
+}
+a:active {
+  color: rgba(203, 145, 254, 0.9);
+}
+#p {
+  color: rgba(50, 15, 250, 0.7);
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 10px 0px 10px 10px;
+}
+#d:hover {
+  color: crimson;
+  font-size: 20px;
+  background-color: darkorange;
+  padding: 7px;
+  border-radius: 7px;
+}
+td.border {
+  border-left-color: #1b5e20;
+  border-left-width: 2px;
+}
+#border2 {
+  border-left-color: #2962ff;
+  border-left-width: 2px;
+}
+img.a {
+  vertical-align: -5px;
+  margin-right: 2px;
+}
+img.b {
+  vertical-align: -5px;
+  margin-right: 2px;
+}
+img.c {
+  vertical-align: -5px;
+  margin-right: 2px;
+}
+img.d {
+  vertical-align: -5px;
+  margin-right: 2px;
+}
+img.e {
+  vertical-align: -5px;
+  margin-right: 2px;
+}
+.main {
+  margin: 10px 0px -15px 20px;
+}
+#ad {
+  margin-left: 10px;
+}
+#cap {
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+th {
+  text-shadow: 1px 1px 0px #ad1457;
+  color:#1A237E;
+  font-family: Poppins;
+}
+th.head {
+    padding-right: 12px;
+    text-shadow: 2px 2px 0px #546E7A;
+    color:#FDD835;
+    font-family:Acme,Poppins;
+}
