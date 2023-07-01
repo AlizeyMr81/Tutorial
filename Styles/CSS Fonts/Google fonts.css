@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+}
+body {
+  background-color: #536dfe;
+}
+h1.a {
+  font-family: "Ysabeau Infant", sans-serif;
+}
+h1.b {
+  font-family: sofia, sans-serif;
+}
+h1.c {
+  font-family: "Trirong", serif;
+}
+h1.d {
+  font-family: "Anonymous Pro", monospace;
+}
