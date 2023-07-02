@@ -1,0 +1,24 @@
+@font-face {
+  font-family: Vazir;
+  src: url("../../Fonts/ttf/Vazir.ttf") format("truetype");
+}
+* {
+  box-sizing: border-box;
+  margin: 0px;
+}
+
+body {
+  font-family:Vazir ;
+}
+h1 {
+  text-shadow: 2px 2px 2px #03a9f4;
+  color: #f4511e;
+}
+div.main {
+  width: 400px;
+  background-color: #fdd835;
+  margin: 20px auto;
+  padding: 10px;
+  border-radius: 16px;
+  line-height: 1.8;
+}
