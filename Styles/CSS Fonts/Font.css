@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+}
+body {
+  font-family: "Fauna One", serif;
+}
+h1 {
+  font-family: "Cinzel", serif;
+  text-shadow: 2px 2px 2px #03a9f4;
+  color: #f4511e;
+}
+div.main {
+  width: 400px;
+  background-color: #fdd835;
+  margin: 20px auto;
+  padding: 10px;
+  border-radius: 16px;
+  line-height: 1.8;
+  font-size: 2vw;
+}
+p.content {
+  color: #00897b;
+  font-weight: bold;
+  font-variant: small-caps;
+  font-style: italic;
+
+  /* Use Font Shorthand */
+  font: italic small-caps bold 1em "Fauna One", serif;
+}
