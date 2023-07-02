@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+}
+.fa-brands,
+.fa-whatsapp,
+.fa-bounce {
+  font-size: 50px;
+  margin: 30px;
+}
+.bi,
+.bi-apple {
+  color: #33691e;
+  font-size: 40px;
+  margin: 30px;
+}
+
+.material-symbols-outlined {
+    color: red;
+    font-size: 32px;
+}
