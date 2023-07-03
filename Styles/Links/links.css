@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+}
+
+h1 {
+  text-shadow: 2px 2px 2px #03a9f4;
+  color: #f4511e;
+}
+div.main {
+  width: 400px;
+  background-color: #fdd835;
+  margin: 20px auto;
+  padding: 10px;
+  border-radius: 16px;
+  line-height: 1.8;
+  padding-top: 0px;
+}
+p.content {
+  color: #00897b;
+  font-weight: bold;
+  font-variant: small-caps;
+  font-style: italic;
+
+  /* Use Font Shorthand */
+  font: italic small-caps bold 1em "Fauna One", serif;
+}
+a:link,
+a:visited {
+  text-decoration: none;
+  color: #039be5;
+  border: 2px solid #d500f9;
+  padding: 3px;
+  border-radius: 10px;
+}
+a:hover,
+a:active {
+  background-color: #ffebee;
+  cursor: progress;
+}
