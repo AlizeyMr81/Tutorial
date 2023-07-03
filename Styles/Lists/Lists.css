@@ -1,0 +1,20 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+div {
+  width: 500px;
+  margin: 20px;
+}
+ul {
+  list-style-type: square;
+  list-style-position: inside;
+  list-style-image: url("../../images/icons8-plus.gif");
+
+  /* Use shorthand property */
+  list-style: square inside url("../../images/icons8-plus.gif");
+}
+
+li {
+  color: #880e4f;
+}
