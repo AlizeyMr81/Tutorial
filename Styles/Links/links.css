@@ -47,3 +47,7 @@ h1:hover + p {
 .ho {
   display: none;
 }
+
+h1:hover ~ div {
+  color: red;
+}
