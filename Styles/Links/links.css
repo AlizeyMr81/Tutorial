@@ -6,6 +6,7 @@
 h1 {
   text-shadow: 2px 2px 2px #03a9f4;
   color: #f4511e;
+  display: inline-block;
 }
 div.main {
   width: 400px;
@@ -37,4 +38,12 @@ a:hover,
 a:active {
   background-color: #ffebee;
   cursor: progress;
+}
+/* This Pseudo classes is important */
+h1:hover + p {
+  color: #00897b;
+  display: block;
+}
+.ho {
+  display: none;
 }
