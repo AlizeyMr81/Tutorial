@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+.box {
+  height: 150px;
+  width: 400px;
+  background-color: #fdd835;
+  border: 8px solid #ffb300;
+  margin: 0px auto;
+  overflow: auto;
+}
+.box2 {
+  height: 150px;
+  width: 400px;
+  background-color: #00bcd4;
+  border: 8px solid#3F51B5;
+  margin: 10px auto;
+  overflow: hidden;
+}
+.box2_child {
+    height: 80px;
+    width: 800px;
+    background-color: #E91E63;
+}
