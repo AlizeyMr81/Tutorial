@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+.box1,
+.box2,
+.box3 {
+  height: 100px;
+  margin-bottom: 24px;
+}
+.content {
+  height: 2000px;
+}
+.box1 {
+  background-color: #2e7d32;
+}
+.box2 {
+  background-color: #d84315;
+}
+.box3 {
+  background-color: #1565c0;
+}
+.box1 {
+  position: relative;
+  /* top: 60px; */
+}
+.box1_child {
+  height: 60px;
+  background-color: crimson;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-bottom: 10px;
+  border: 2px solid yellowgreen;
+}
+.box2 {
+  position: sticky;
+  top: 0;
+}
