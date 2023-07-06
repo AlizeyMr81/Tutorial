@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+@font-face {
+  font-family: Shabnam;
+  src: url("../../Fonts/ttf/Shabnam.ttf") format("truetype");
+}
+.container {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 56px;
+  background-color: #fafafa;
+}
+.text {
+  display: flex;
+  justify-content: space-between;
+  font-family: Shabnam;
+}
+.texico {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 46px;
+}
+.textico_child {
+  font-weight: bold;
+}
+.bi,
+.bi-chevron-double-down {
+  color: #d84315;
+  margin-top: 3px;
+}
+.content {
+  display: flex;
+  justify-content: space-around;
+}
+.img {
+  width: 200px;
+  height: 200px;
+  box-shadow: 2px 2px 5px #E0E0E0;
+}
