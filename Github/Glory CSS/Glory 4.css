@@ -1,99 +1,94 @@
+@font-face {
+  font-family: Shabnam;
+  src: url("../../Fonts/ttf/Shabnam.ttf") format("truetype");
+}
 * {
   box-sizing: border-box;
   margin: 0;
 }
-@font-face {
-  font-family: Shabnam;
-  src: url("../../Fonts/ttf/Shabnam.ttf") format("truetype");
+body {
+  font-family: Shabnam, sans-serif;
+  background-color: #fafafa;
 }
 .container {
   max-width: 1070px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 56px;
-  background-color: #fafafa;
-  flex-wrap: wrap;
+ 
 }
 .text {
   display: flex;
   justify-content: space-between;
-  font-family: Shabnam;
   margin-bottom: 46px;
 }
 .texico {
   display: flex;
-  gap: 8px;
+  align-items: center;
+  gap: 6px;
 }
-.textico_child {
-  font-weight: bold;
-}
-.bi,
-.bi-chevron-double-down {
-  color: #d84315;
-  margin-top: 3px;
+.section_textico_child {
+  color: #1e88e5;
+  width: 22px;
+  height: 22px;
 }
 .content {
   display: flex;
   justify-content: space-between;
-  
+  gap: 24px;
 }
-.dd {
- width: 255px;
+.product {
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  background-color: #fff;
 }
 .img {
-  width: 200px;
-  height: 150px;
+  width: 100%;
   display: block;
   margin: 0 auto;
-  box-shadow: 2px 2px 5px #e0e0e0;
   margin-bottom: 20px;
 }
 .pflex_child {
-  font-family: Shabnam;
   width: 210px;
   font-size: 12px;
-  margin: 0 auto;
+  line-height: 1.5;
+  height: 52px;
 }
 a {
   text-decoration: none;
   color: #263238;
 }
 .discount {
-  font-family: Shabnam;
+  background-color: #E3F2FD;
+  margin-top: 20px;
+  display: inline-block;
+  border-radius: 5px;
   font-size: 12px;
   color: #1565c0;
   font-weight: bold;
-  margin-top: 20px;
-  position: relative;
-  right: 25px;
-}
-.discount2 {
-  margin-top: 35px;
 }
 .old_price {
   color: #90a4ae;
   font-weight: normal;
   text-decoration: line-through;
-  margin-right: 8px;
+  margin-right: 5px;
 }
 .new_price {
   display: flex;
   gap: 110px;
-  position: relative;
-  right: 25px;
   margin-top: 8px;
 }
 .np2 {
-  font-family: Shabnam;
   font-size: 14px;
   font-weight: bold;
-  
 }
 .np2_child {
-  font-weight:normal;
+  font-weight: normal;
   font-size: 10px;
   color: #616161;
 }
-.bi, .bi-star-fill {
-  color: #FFC107;
+.bi,
+.bi-star-fill {
+  color: #ffc107;
 }
