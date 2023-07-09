@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+/* element element */
+/* .main p {
+  color: red;
+} */
+
+/* element > element */
+/* .main > div {
+  color: red;
+} */
+
+/* element + element */
+/* h3 + p {
+  color: red;
+} */
+
+/* element ~ element */
+h3 ~ p {
+  color: red;
+}
