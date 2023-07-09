@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+.transparency {
+  width: 100%;
+}
+img {
+  width: 400px;
+  padding-top: 10px;
+  opacity: 0.5;
+}
+img:hover {
+  opacity: 1;
+}
+.colorful {
+  width: 100%;
+}
+.colorful_child {
+  width: 400px;
+  opacity: 1;
+}
+.colorful_child:hover {
+  opacity: 0.5;
+}
