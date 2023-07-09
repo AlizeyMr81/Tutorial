@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+/*
+:root
+:checked
+:first-child
+:last-child
+:nth-child()
+:not(selector) 
+:empty
+:focus
+ */
+:root {
+  font-size: 18px;
+}
+.content {
+  width: 800px;
+  border: 1px solid;
+  margin: 0 auto;
+  margin-top: 56px;
+}
+/* :checked */
+.main {
+  margin-right: 20px;
+}
+.checkbox:checked + .alert {
+  display: block;
+}
+p {
+  display: none;
+}
+/*:first-child,,,,:last-child,,,:nth-child() */
+/* .item:first-child {
+  color: red;
+}
+.item:last-child {
+  color: blue;
+} */
+/* .item:nth-child(3) {
+  background: green;
+  list-style-type: circle;
+} */
+
+/* :not(selector) */
+.item:not(.item-delete) {
+  color: red;
+}
+
+/* :empty */
+.base .row:empty {
+    border: 2px solid red;
+    height: 80px;
+    width: 50%;
+}
