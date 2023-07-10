@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+.container {
+  width: 50%;
+  margin: 20px 80px;
+  font-size: 26px;
+}
+/* 
+Inline style
+IDs
+class,pseudo-classes-Attribute-selector
+element,pseudo-element
+*/
+
+p {
+  color: green;
+}
+#demo {
+  color: red;
+}
+.title {
+  color: blue;
+}
+
+/* .title {
+  color: blue !important;
+} */
