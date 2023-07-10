@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+form {
+  margin: 10px 30px;
+}
+/* 
+[attribute]
+[attribute="value"]
+[attribute^="value"]
+[attribute$="value"]
+ */
+
+/* [type] {
+  background-color: yellow;
+} */
+
+[type="text"] {
+    background-color: yellow;
+}
+
+a[href^="https://"] {
+    text-decoration: none;
+}
+a[href$=".com"]:hover {
+text-decoration: none;
+background-color: red;
+border-radius: 4px;
+}
