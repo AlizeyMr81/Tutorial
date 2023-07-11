@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* 
+calc()
+min()
+max()
+clamp()
+minmax()
+*/
+
+.container {
+  width: 1000px;
+  height: 300px;
+  background-color: blueviolet;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+.box {
+  width: calc(100% - 10px);
+  height: 300px;
+  background-color: aqua;
+}
+/* .box2 {
+    width: min(600px, 500px, 350px);
+    width: max(600px, 500px, 350px);
+    height: 300px;
+    background-color: #1B5E20;
+} */
+.box2 {
+  width: clamp(350px, 50%, 600px);
+
+  /* min-width: 350px;
+  width: 50%;
+  max-width: 600px; */
+
+  height: 300px;
+  background-color: #e64a19;
+}
