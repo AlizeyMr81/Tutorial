@@ -1,0 +1,46 @@
+html {
+  box-sizing: border-box;
+  margin: 0;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: inherit;
+}
+
+.horizontal-nav {
+  background-color: #333;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.horizontal-child:first-child {
+    background-color: green;
+}
+.horizontal-child {
+  float: left;
+}
+.horizontal-child a {
+  color: aliceblue;
+  text-decoration: none;
+  display: block;
+  padding: 14px 16px;
+  text-align: center;
+}
+.horizontal-child a:hover:not(.active){
+    background-color: black;
+}
+.right {
+    float: right;
+}
+.menu {
+    border-right: 2px solid wheat;
+}
+.div {
+    height: 2000px;
+}
