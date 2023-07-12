@@ -1,0 +1,54 @@
+html {
+  box-sizing: border-box;
+  margin: 0;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: inherit;
+}
+@font-face {
+  font-family: "Fasthand";
+  src: url("../../Fonts/ttf/Fasthand-Regular.ttf") format("truetype");
+}
+body {
+  font-family: Fasthand, cursive;
+}
+.content {
+  width: 100%;
+  background-color: #263238;
+  list-style-type: none;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+.ul-child {
+  float: left;
+}
+a {
+    display: block;
+}
+.li-child {
+  color: #ffebee;
+  text-decoration: none;
+  display: block;
+  padding: 14px 20px;
+}
+.ul-child:hover {
+    background-color:#AD1457;
+}
+.drowpdown {
+display: none;
+position: absolute;/*this code (position:absolute) is important to show dropdown you must write this code that show dropdown navbar*/
+}
+.show-link:hover .drowpdown {
+    display: block;
+    box-shadow: 4px 4px 8px #BDBDBD;
+    min-width: 120px;
+}
+.links {
+    color: #D84315;
+    text-decoration: none;
+    padding: 8px 2px;
+}
