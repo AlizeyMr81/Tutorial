@@ -15,24 +15,40 @@ html {
   margin-top: 86px;
   border: 1px solid black;
   overflow: hidden;
-  position: relative;
+  display: flex;
 }
 .box {
-  width: 100px;
+  width: 200px;
   height: 80px;
   transform: translateX(5px);
-  transition: background-color 450ms ease-out, transform 1000ms ease-out,
-    width 900ms ease-out, height 500ms ease-out;
+  color: #64dd17;
+  transition: background-color 450ms ease-out, transform 1200ms ease-out;
 }
 .container:hover :first-child {
   background-color: #fbc02d;
-  width: 200px;
-  height: 80px;
-  transform: translatex(600px);
+  transform: translate(-600px);
 }
 .box-n {
   border-radius: 10px;
   text-align: center;
   margin-top: 26px;
   background-color: #6a1b9a;
+  padding: 28px 0;
+}
+.appear {
+  width: 200px;
+  height: 80px;
+  background-color: #6a1b9a;
+  border-radius: 10px;
+  text-align: center;
+  color: #0288d1;
+  transform: translateX(5px);
+  margin-top: 26px;
+  padding: 28px 0;
+  transform: translateX(400px);
+  transition: background-color 450ms ease-out, transform 1000ms ease-out;
+}
+.container:hover .appear {
+  transform: translateX(92px);
+  background-color: #fbc02d;
 }
