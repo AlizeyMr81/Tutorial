@@ -1,0 +1,32 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+}
+/* 
+linear-gradient();
+radial-gradient();
+conic-gradient();
+*/
+.container {
+  width: 1000px;
+  margin: 56px auto;
+  border: 1px solid red;
+}
+.box {
+  width: 800px;
+  height: 600px;
+  margin: 0 auto;
+  background: linear-gradient(
+      90deg,
+      rgba(207, 216, 220, 0.3169642857142857) 0%,
+      rgba(29, 58, 71, 0.8211659663865546) 100%
+    ),
+    url("../../images/30719-la_musique_de_lartiste-de_la_musique_pop-rappeur-chanteur-auteur_compositeur_interprete-500x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
