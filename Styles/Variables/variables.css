@@ -1,0 +1,42 @@
+:root {
+  --main-color: #00897b;
+}
+
+html {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+}
+.container {
+  --fontsize: 50px;
+  max-width: 1000px;
+  margin: 40px auto;
+}
+.box {
+  width: 50%;
+  height: 200px;
+  margin: 0 auto;
+  background-color: var(--main-color);
+}
+
+h1,
+p {
+  text-align: center;
+  color: var(--main-color);
+  font-size: var(--fontsize);
+}
+
+@media all and (max-width: 450px) {
+  :root {
+    --main-color: #ad1457;
+  }
+  .container {
+    --fontsize: 20px;
+  }
+}
