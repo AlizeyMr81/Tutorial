@@ -1,11 +1,11 @@
 html {
   box-sizing: border-box;
-  margin: 0;
 }
 *,
 *::after,
 *::before {
   box-sizing: inherit;
+  margin: 0;
 }
 body {
   font-family: "Poppins", sans-serif;
