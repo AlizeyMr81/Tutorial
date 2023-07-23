@@ -29,6 +29,7 @@ html {
   line-height: 7rem;
   font-size: 3rem;
   color: #212121;
+  margin-right: .5rem;
 }
 .flex_container,
 .flex_items {
