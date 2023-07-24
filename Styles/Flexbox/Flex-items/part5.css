@@ -1,0 +1,39 @@
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *::after,
+  *::before {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+  }
+  .flex_container {
+    width: 60rem;
+    height: 40rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 56px;
+    background-color: #80deea;
+    padding: 0.25rem;
+    display: flex;
+  }
+  .flex_items {
+    height: 20rem;
+    background-color: #d84315;
+    text-align: center;
+    font-size: 3rem;
+    color: #212121;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex:auto
+  }
+  .flex_container,
+  .flex_items {
+    border-radius: 0.5rem;
+  }
+  .flex_container .flex_items:nth-child(odd) {
+    background-color: #00695c;
+  }
+  
