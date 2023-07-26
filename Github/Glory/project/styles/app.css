@@ -307,7 +307,7 @@ button {
 /* Finish section tag */
 /* Finish header */
 
-/* start main of website */
+/* start main */
 .main_top {
   text-align: center;
   margin-top: 8rem;
@@ -351,6 +351,69 @@ button {
 .works__img {
   width: 100%;
 }
+
+/*Start secend part of main */
+.main_guide {
+  background-color: #2f5bea;
+  width: 100%;
+  color: #ffffff;
+  padding: 2rem;
+  margin-top: 5rem;
+}
+.guide_content {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+.guide__text {
+  max-width: 27rem;
+  margin: 0 auto;
+  line-height: 2rem;
+  font-family: "TT Norms";
+  letter-spacing: 0.25rem;
+}
+.main_comments {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 67rem;
+  margin: 0 auto;
+}
+.box_comment {
+  padding: 0 0.8rem;
+  max-width: 20rem;
+  background-color: #fff;
+  color: #7e8085;
+  border-radius: 0.25rem;
+  box-shadow: 2px 2px 14px -5px #171717;
+}
+.guide_text__of__person {
+  line-height: 2rem;
+  font-family: "Times New Roman";
+  font-style: italic;
+}
+.person_idea {
+  display: flex;
+  align-items: center;
+  margin-top: 4rem;
+  gap: 0.5rem;
+}
+.person_idea p {
+  font-weight: bold;
+  color: #000;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 71rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 8rem;
+}
+.child__logo {
+  width: 100%;
+}
+
 /* Project Responsive */
 
 @media only screen and (max-width: 1200px) {
