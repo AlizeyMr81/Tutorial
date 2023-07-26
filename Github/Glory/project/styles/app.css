@@ -421,6 +421,37 @@ button {
   display: block;
   margin: 1rem;
 }
+.portfolio {
+  text-align: center;
+  margin-top: 5rem;
+}
+.portfolio__text {
+  margin: 0 0 0.8rem 0;
+  font-family: "TTNorms";
+  color: #7e8085;
+  text-transform: uppercase;
+}
+.portfolio__title {
+  margin: 0 0 4rem 0;
+  font-family: "TTNorms medium";
+  color: #081d43;
+  font-weight: normal;
+}
+.portfolio_photo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1.8rem;
+}
+.portfolio_items {
+  flex-basis: 20rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+.example__photo {
+  width: 100%;
+}
 
 /* Project Responsive */
 
