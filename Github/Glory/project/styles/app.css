@@ -440,17 +440,66 @@ button {
 .portfolio_photo {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 1.8rem;
+  justify-content: space-between;
 }
 .portfolio_items {
-  flex-basis: 20rem;
+  flex-basis: 23rem;
   border-radius: 0.5rem;
   overflow: hidden;
+  margin-bottom: 2rem;
 }
 .example__photo {
   width: 100%;
+}
+/* finish Main */
+
+/* start footer */
+.first_part_of_footer {
+  background-color: #2c57e4;
+  padding: 4rem 0;
+}
+.Register_footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.Register_footer p {
+  color: #fff;
+  font-family: TTNorms;
+  font-weight: normal;
+  font-size: 1.2rem;
+}
+.newsletter_email {
+  background-color: #fff;
+  flex-basis: 18rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.25rem;
+  border-radius: 0.2rem;
+}
+.email__address {
+  border: none;
+  outline: none;
+}
+.footer__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.8rem 1rem;
+  background-color: #2f5bea;
+  border-radius: 0.2rem;
+}
+.footer_bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+.footer_bottom__text {
+  font-family: TTNorms;
+  color: #6c7890;
+  font-size: 0.8rem;
 }
 
 /* Project Responsive */
