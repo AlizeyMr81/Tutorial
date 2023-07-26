@@ -305,7 +305,52 @@ button {
   background-color: #1b5e20;
 }
 /* Finish section tag */
+/* Finish header */
 
+/* start main of website */
+.main_top {
+  text-align: center;
+  margin-top: 8rem;
+}
+/* .main_content {
+} */
+.main__text {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: #bdbdbd;
+}
+.main__title {
+  text-shadow: 2px 2px 5px #bbdefb;
+}
+.boxes {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0.5rem;
+}
+.title__boxes {
+  margin-top: 2rem;
+  margin-bottom: 0.25rem;
+}
+.text__boxses {
+  max-width: 16rem;
+}
+.boxes div {
+  line-height: 2rem;
+}
+.boxes div p {
+  margin: 0;
+  color: #757575;
+}
+.photo_of_main_top {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  max-width: 31rem;
+}
+.works__img {
+  width: 100%;
+}
 /* Project Responsive */
 
 @media only screen and (max-width: 1200px) {
