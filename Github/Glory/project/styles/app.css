@@ -274,7 +274,6 @@ button {
 }
 .text-btn-header {
   flex-basis: 50%;
-  margin-top: 5rem;
 }
 .content_left {
   max-width: 28rem;
@@ -288,7 +287,7 @@ button {
   line-height: 2rem;
 }
 .photo_header__bottom {
-  max-width: 34rem;
+  flex-basis: 50%;
 }
 .photo_header {
   margin-right: 1rem;
@@ -338,6 +337,7 @@ button {
   align-items: center;
   justify-content: space-around;
   padding: 0.5rem;
+  flex-wrap: wrap;
 }
 .title__boxes {
   margin-top: 2rem;
@@ -348,6 +348,8 @@ button {
 }
 .boxes div {
   line-height: 2rem;
+  flex-basis: 16rem;
+  flex-shrink: 0;
 }
 .boxes div p {
   margin: 0;
@@ -532,6 +534,19 @@ button {
   .contact_click {
     display: none;
   }
+  .introduction {
+    flex-direction: column-reverse;
+    margin-top: 3rem;
+  }
+  .text-btn-header {
+    margin-top: 1rem;
+  }
+  .content_left {
+    max-width: 100%;
+  }
+  .photo_header__bottom {
+    margin-bottom: 1.5rem;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -547,20 +562,39 @@ button {
     top: 0;
     left: -256px;
     bottom: 0;
-    background-color: blueviolet;
     flex-direction: column;
     padding: 2rem 1rem;
     gap: 0;
     transition: all 300ms;
+    background-color: #3f70e1;
   }
   .menu_links__child {
     margin-bottom: 2rem;
     font-size: 1.2rem;
   }
+  .links_of__menu {
+    color: #fff;
+  }
+  .buttons_section {
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  .links__btns {
+    margin-bottom: 1rem;
+  }
+  .boxes div {
+    flex-basis: 14rem;
+  }
 }
 
 @media only screen and (max-width: 576px) {
   .container {
+    max-width: 100%;
+  }
+  .boxes div {
+    flex-basis: 100%;
+  }
+  .text__boxses {
     max-width: 100%;
   }
 }
