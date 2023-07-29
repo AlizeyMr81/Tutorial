@@ -260,6 +260,11 @@ button {
   padding: 0.5rem 1.5rem;
   border-radius: 0.25rem;
 }
+.header__icon {
+  font-size: 1.8rem;
+  display: none;
+  cursor: pointer;
+}
 /* Creat section tag  */
 .introduction {
   display: flex;
@@ -282,9 +287,12 @@ button {
   color: #90a4ae;
   line-height: 2rem;
 }
+.photo_header__bottom {
+  max-width: 34rem;
+}
 .photo_header {
   margin-right: 1rem;
-  flex-basis: 50%;
+  width: 100%;
 }
 .buttons_section {
   margin-top: 1.5rem;
@@ -521,11 +529,33 @@ button {
   .container {
     max-width: 720px;
   }
+  .contact_click {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 768px) {
   .container {
     max-width: 540px;
+  }
+  .header__icon {
+    display: block;
+  }
+  .menu_links {
+    position: fixed;
+    width: 16rem;
+    top: 0;
+    left: -256px;
+    bottom: 0;
+    background-color: blueviolet;
+    flex-direction: column;
+    padding: 2rem 1rem;
+    gap: 0;
+    transition: all 300ms;
+  }
+  .menu_links__child {
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
   }
 }
 
