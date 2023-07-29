@@ -429,6 +429,7 @@ button {
   align-items: center;
   justify-content: space-between;
   margin-top: 8rem;
+  flex-wrap: wrap;
 }
 .companies__img {
   display: block;
@@ -498,6 +499,7 @@ button {
 .email__address {
   border: none;
   outline: none;
+  width: 100%;
 }
 .footer__btn {
   display: flex;
@@ -512,6 +514,7 @@ button {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 0;
+  flex-wrap: wrap;
 }
 .footer_bottom__text {
   font-family: TTNorms;
@@ -524,6 +527,9 @@ button {
 @media only screen and (max-width: 1200px) {
   .container {
     max-width: 960px;
+  }
+  .portfolio_items {
+    flex-basis: 28rem;
   }
 }
 
@@ -546,6 +552,16 @@ button {
   }
   .photo_header__bottom {
     margin-bottom: 1.5rem;
+  }
+  .main_comments {
+    flex-direction: column;
+  }
+  .box_comment {
+    min-height: 12rem;
+  }
+  .portfolio_items {
+    flex-basis: 20rem;
+    margin-bottom: 1rem;
   }
 }
 
@@ -585,6 +601,19 @@ button {
   .boxes div {
     flex-basis: 14rem;
   }
+  .logo {
+    justify-content: center;
+  }
+  .portfolio_items {
+    flex-basis: 100%;
+  }
+  .Register_footer {
+    flex-direction: column;
+  }
+  .newsletter_email {
+    flex-basis: auto;
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 576px) {
@@ -597,4 +626,8 @@ button {
   .text__boxses {
     max-width: 100%;
   }
+  .logo {
+    margin-top: 2.5rem;
+  }
+  
 }
