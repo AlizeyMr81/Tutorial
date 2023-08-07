@@ -1,0 +1,54 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #37474f;
+}
+
+/* 
+  justify-self
+  align-self
+  */
+
+.container {
+  max-width: 65rem;
+  background-color: #bdbdbd;
+  margin: 2rem auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 6.5rem 9rem;
+  gap: 10px;
+}
+.grid_item {
+  background-color: #1976d2;
+  text-align: center;
+  padding-top: 1rem;
+}
+.item_1 {
+  align-self: start;
+}
+.item_2 {
+  justify-self: center;
+}
+.item_3 {
+  align-self: end;
+  justify-self: end;
+}
+.item_4 {
+    align-self: center;
+    justify-self: center;
+}
+.item_5 {
+    align-self: start;
+    justify-self: end;
+}
+.item_6 {
+    align-self: center;
+}
