@@ -1,0 +1,35 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #37474f;
+}
+
+/* 
+justify-items
+align-items
+*/
+
+.container {
+  max-width: 65rem;
+  background-color: #bdbdbd;
+  margin: 2rem auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 6.5rem 9rem;
+  gap: 10px;
+  align-items: start;
+  /* justify-items: center; */
+}
+.grid_item {
+  background-color: #1976d2;
+  text-align: center;
+  padding-top: 1rem;
+}
