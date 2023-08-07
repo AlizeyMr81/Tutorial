@@ -1,0 +1,31 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+/* 
+justify-content
+align-content
+*/
+.container {
+  max-width: 65rem;
+  min-height: 30rem;
+  margin: 2rem auto;
+  background-color: aqua;
+  display: grid;
+  grid-template-columns: repeat(2, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 0.8rem;
+  /* align-content: space-between; */
+  /* align-content: space-between center , start , end , space-between , space-around , space-evenly; */
+  justify-content: space-evenly;
+  /* justify-content: space-between center , start , end , space-between , space-around , space-evenly; */
+}
+.grid_items {
+  background-color: blueviolet;
+}
