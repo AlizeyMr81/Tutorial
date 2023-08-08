@@ -1,0 +1,50 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  max-width: 62.5rem;
+  background-color: #455a64;
+  margin: 2rem auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, minmax(100px, auto));
+  grid-auto-rows: minmax(100px, auto);
+  grid-template-areas:
+    "header header header header"
+    "sidebar main main main"
+    "sidebar main main main"
+    "sidebar main main main"
+    "sidebar item2 item2 item2"
+    "footer footer footer footer";
+  gap: 0.25rem;
+}
+.grid_items {
+  background-color: #1976d2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+.header {
+  grid-column: header;
+}
+.main {
+  grid-area: main;
+}
+.side_bar {
+  grid-column: sidebar;
+  grid-row: sidebar;
+}
+.footer {
+  grid-area: footer;
+}
+.item_2 {
+  grid-column: item2;
+}
