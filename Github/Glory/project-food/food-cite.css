@@ -1,0 +1,446 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("fonts/Poppins-Regular.ttf");
+}
+body {
+  font-family: "Poppins";
+
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 80vh repeat(5, max-content);
+}
+.header_wrapper {
+  grid-column: 1 / -1;
+  margin-bottom: 2rem;
+}
+.header {
+  background-image: url("image/Food-Websites-Image.webp");
+  background-size: cover;
+  height: 100%;
+  background-repeat: no-repeat;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+}
+.content {
+  max-width: 17rem;
+  display: grid;
+}
+.text_top {
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+.text_bottom {
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+}
+.colo_text_bottom {
+  color: #e65100;
+}
+.button {
+  border: none;
+  padding: 1rem 1.5rem;
+  font-size: 12px;
+  justify-self: center;
+  background-color: #fbc02d;
+  color: #fffde7;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  opacity: 0.9;
+  transition: background-color 250ms;
+}
+.button:hover {
+  background-color: #f9a825;
+}
+.main {
+  grid-column: 1 / -1;
+}
+.first_main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  column-gap: 0.5rem;
+  margin-top: 2rem;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+.story:first-child {
+  text-align: center;
+  color: #fbc02d;
+}
+.title_story::after,
+.title_story::before {
+  content: "";
+  position: relative;
+  height: 1px;
+  background-color: #000;
+  display: inline-block;
+  width: 5%;
+  vertical-align: middle;
+}
+.title_story::after {
+  left: 0.5rem;
+  margin-right: -50%;
+}
+.title_story::before {
+  right: 0.5rem;
+  margin-left: -50%;
+}
+@media only screen and (max-width: 450px) {
+  .first_main {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 0.5rem;
+  }
+}
+.service {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3rem;
+}
+.service .title_service {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #fbc02d;
+}
+.title_service::after,
+.title_service::before {
+  content: "";
+  width: 8%;
+  height: 1px;
+  position: relative;
+  display: inline-block;
+  background-color: #000;
+  vertical-align: middle;
+}
+.title_service::after {
+  left: 0.5rem;
+  margin-right: -50%;
+}
+.title_service::before {
+  right: 0.5rem;
+  margin-left: -50%;
+}
+.seconde_main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, max-content);
+  gap: 2.5rem;
+}
+.text_center {
+  text-align: center;
+}
+.text_center img {
+  border-top-right-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+}
+@media only screen and (max-width: 650px) {
+  .seconde_main {
+    grid-template-columns: repeat(auto-fit , minmax(150px , 1fr));
+    grid-template-rows: repeat(6, max-content);
+  }
+}
+/* start ordering part */
+.ordering {
+  margin-top: 5rem;
+}
+.ordering_wrapper {
+  display: grid;
+  grid-template-columns: 50px repeat(4, 1fr) 50px;
+  grid-template-rows: 1fr;
+  text-align: center;
+  background-image: linear-gradient(
+      180deg,
+      rgba(5, 4, 1, 0.2) 0%,
+      rgba(46, 45, 42, 0.5) 100%
+    ),
+    url("image/Ditas\ Interior\ Image\ -\ 1\ \(8\).webp");
+  background-position: center;
+  padding: 3.5rem;
+}
+.ordering .title_ordering {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #fbc02d;
+}
+.title_ordering::after,
+.title_ordering::before {
+  content: "";
+  display: inline-block;
+  width: 5%;
+  height: 1px;
+  position: relative;
+  background-color: #000;
+  vertical-align: middle;
+}
+.title_ordering::after {
+  left: 0.5rem;
+  margin-right: -50%;
+}
+.title_ordering::before {
+  right: 0.5rem;
+  margin-left: -50%;
+}
+.left {
+  background-color: #000000d7;
+  color: #fff;
+  grid-column: 2 / 3;
+  display: grid;
+  grid-template-rows: 2.5fr 4fr 2fr;
+  padding-top: 1rem;
+}
+.right {
+  background-color: #ffffffd5;
+  grid-column: 3 / 6;
+  display: grid;
+  grid-template-rows: 1.5fr 1.5fr 2fr;
+  padding-top: 2rem;
+}
+
+.item_images {
+  display: grid;
+  width: 100%;
+  margin: 0 auto;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  justify-items: center;
+  align-items: center;
+  padding: 1rem;
+}
+.image_box {
+  max-width: 100px;
+  height: 100%;
+  clip-path: circle(42% at 50% 50%);
+}
+.branch,
+.paranches,
+.text_tell,
+.email {
+  color: goldenrod;
+}
+.branch {
+  margin-bottom: 1rem;
+}
+.branch,
+.text_tell,
+.email,
+.Slogan_text {
+  font-family: "Satisfy", cursive;
+}
+.slogan {
+  max-width: 12rem;
+  margin: 0 auto;
+}
+.Slogan_text {
+  font-size: 12px;
+}
+@media only screen and (max-width: 700px) {
+  .left {
+    font-size: 12px;
+  }
+  .right {
+    font-size: 14px;
+  }
+  .ordering_wrapper {
+    padding: 10px 0;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .ordering_wrapper {
+    grid-template-columns: 10px repeat(4, 1fr) 10px;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .image_box {
+    clip-path: circle(30% at 50% 50%);
+    height: 50%;
+  }
+  .left {
+    font-size: 10px;
+  }
+}
+/* finish ordering part */
+
+/* start gallery part */
+.gallery_container {
+  margin-top: 3rem;
+}
+.wrapper_title_gallery {
+  text-align: center;
+  color: #f9a825;
+}
+.title__gallery::after,
+.title__gallery::before {
+  content: "";
+  display: inline-block;
+  position: relative;
+  width: 5%;
+  height: 1px;
+  background-color: #000;
+  vertical-align: middle;
+}
+.title__gallery::after {
+  left: 0.5rem;
+  margin-right: -50%;
+}
+.title__gallery::before {
+  right: 0.5rem;
+  margin-left: -50%;
+}
+.galley_items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 280px);
+  padding: 1.25rem 5rem;
+  gap: 1rem;
+  grid-template-areas:
+    "gallery_1 gallery_1 gallery_2"
+    "gallery_3 gallery_4 gallery_2"
+    "gallery_3 gallery_5 gallery_5";
+}
+.gallery {
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 1rem;
+}
+.item_1 {
+  grid-area: gallery_1;
+  background-image: url("image/gallery/0908-family-feasts-85761e5.jpg");
+}
+.item_2 {
+  grid-area: gallery_2;
+  background-image: url("image/gallery/ARTICLE-1.jpg");
+}
+.item_3 {
+  grid-area: gallery_3;
+  background-image: url("image/gallery/Ithaa-Maldives.avif");
+}
+.item_4 {
+  grid-area: gallery_4;
+  background-image: url("image/gallery/Traditional-Foods.jpg");
+}
+.item_5 {
+  grid-area: gallery_5;
+  background-image: url("image/gallery/vajra.jpg");
+}
+@media only screen and (max-width: 1000px) {
+  .galley_items {
+    grid-template-areas:
+      "gallery_1 gallery_1 gallery_2"
+      "gallery_3 gallery_4 gallery_4"
+      "gallery_5 gallery_5 gallery_5";
+  }
+}
+@media only screen and (max-width: 700px) {
+  .galley_items {
+    grid-template-rows: repeat(3, 100px);
+  }
+}
+@media only screen and (max-width: 450px) {
+  .galley_items {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, minmax(100px, auto));
+    grid-template-areas:
+      "gallery_1 gallery_1 gallery_1"
+      "gallery_2 gallery_2 gallery_2"
+      "gallery_3 gallery_3 gallery_3"
+      "gallery_4 gallery_4 gallery_4"
+      "gallery_5 gallery_5 gallery_5";
+    padding: 0;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .galley_items {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 0.5rem;
+  }
+}
+/* finish gallery part */
+
+.footer_title_wrapper {
+  grid-column: 1 / -1;
+  margin-top: 3rem;
+}
+.line_footer {
+  display: block;
+  background-color: #78909c;
+  width: 100%;
+  height: 1px;
+}
+
+/* footer */
+.footer {
+  grid-column: 1 / -1;
+  margin-top: 3rem;
+}
+.footer_container {
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  grid-template-rows: repeat(1, max-content);
+  justify-content: space-around;
+}
+.footer_info {
+  text-align: center;
+}
+.footer_info :last-child {
+  margin-bottom: 0;
+}
+.space_title {
+  margin-bottom: 0.5rem;
+  color: #fbc02d;
+}
+.hover_text_1:hover {
+  color: #1a237e;
+  cursor: pointer;
+}
+.hover_text_2:hover {
+  color: #1b5e20;
+  cursor: pointer;
+}
+.hover_text_3:hover {
+  color: #b71c1c;
+  cursor: pointer;
+}
+.space_text {
+  margin-bottom: 0.8rem;
+  font-weight: bold;
+  font-size: 12px;
+}
+.footer .copyright {
+  text-align: center;
+  margin: 2rem 0;
+}
+.text_copyright {
+  font-size: 10px;
+  font-weight: bold;
+}
+.color_ltter_copyright {
+  color: #fbc02d;
+}
+@media only screen and (max-width:620px) {
+  .footer_container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media only screen and (max-width:450px) {
+  .footer_container {
+    grid-template-columns: repeat(1 , minmax(50px , 1fr));
+    grid-template-rows: repeat(3 , max-content);
+  }
+}
+/* finish footer part */
