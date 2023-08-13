@@ -14,3 +14,79 @@ body {
   line-height: 1.6;
   font-size: 1.6rem;
 }
+
+/* 
+
+Reset CSS
+
+*/
+a {
+  text-decoration: none;
+}
+
+/* 
+
+Helper Class
+
+*/
+
+/* 
+
+-- App style --
+
+*/
+.header {
+  background: linear-gradient(rgba(59, 55, 53, 0.5), rgba(59, 55, 53, 0.5)),
+    url("../images/header-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.nav {
+  
+}
+.app-logo {
+  
+}
+.app-logo__img {
+  
+}
+.menu {
+  
+}
+.nav-menu {
+  
+}
+.mobile-menu {
+  
+}
+.mobile-menu__item {
+  
+}
+.mobile-menu__link {
+  
+}
+.nav-menu__links {
+  
+}
+.nav-menu__link {
+  
+}
+.nav-menu__link--border {
+  
+}
+.header__links {
+  
+}
+.header__link {
+  
+}
+.header__link--border {
+  
+}
+.nav__btn {
+  
+}
+.nav__btn-line {
+  
+}
