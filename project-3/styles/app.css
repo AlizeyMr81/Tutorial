@@ -117,7 +117,7 @@ Helper Class
   background-color: var(--orange);
   border-radius: 0.2rem;
   position: relative;
-  transition: all ease-in-out;
+  transition: all 150ms ease-in-out;
 }
 .nav__btn-line::after,
 .nav__btn-line::before {
@@ -127,11 +127,20 @@ Helper Class
   background-color: var(--orange);
   border-radius: 0.2rem;
   position: absolute;
-  transition: all ease-in-out;
+  transition: all 200ms ease-in-out;
 }
 .nav__btn-line::after {
   top: 0.6rem;
 }
 .nav__btn-line::before {
   bottom: 0.7rem;
+}
+.nav__btn--open .nav__btn-line {
+  background-color: transparent;
+}
+.nav__btn--open .nav__btn-line::before {
+   transform:rotate(45deg) translate(5px , 6px);;
+}
+.nav__btn--open .nav__btn-line::after {
+ transform:rotate(-45deg) translate(3px , -4px) ;
 }
