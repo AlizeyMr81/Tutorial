@@ -60,6 +60,14 @@ Helper Class
   align-items: center;
   justify-content: center;
 }
+
+/* 
+
+===============
+    App Logo
+===============
+
+*/
 .app-logo {
   display: block;
   width: 5.5rem;
@@ -69,7 +77,13 @@ Helper Class
   width: 100%;
   height: 100%;
 }
+/* 
 
+=================
+    Main Menu
+=================
+
+*/
 .menu {
   display: none;
 }
@@ -107,6 +121,14 @@ Helper Class
   z-index: -1;
 }
 
+/* 
+
+=======================
+    Navigation Menu
+=======================
+
+*/
+
 .nav-menu {
   position: fixed;
   top: 0;
@@ -122,6 +144,14 @@ Helper Class
   left: 0;
 }
 
+/* 
+
+==================
+    Mobile Menu
+==================
+
+*/
+
 .mobile-menu {
 }
 
@@ -132,6 +162,14 @@ Helper Class
 .mobile-menu__link {
   color: var(--menu-color);
 }
+
+/* 
+
+=================
+     Nav Menu
+=================
+
+*/
 
 .nav-menu__links {
   display: flex;
@@ -150,6 +188,14 @@ Helper Class
   padding: 0.5rem 1.5rem;
   text-align: center;
 }
+
+/* 
+
+===================
+    Header Links
+===================
+
+*/
 
 .header__links {
   display: none;
@@ -171,6 +217,14 @@ Helper Class
   border-color: var(--white);
   background-color: #37474fa7;
 }
+
+/* 
+
+=============
+   Nav Btn
+=============
+
+*/
 
 .nav__btn {
   background-color: var(--white);
