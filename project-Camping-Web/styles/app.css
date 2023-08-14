@@ -2,6 +2,7 @@
   --orange: #e76f51;
   --menu-color: #d2d2d2;
   --white: #fff;
+  --dark: #3b3735;
 }
 html {
   box-sizing: border-box;
@@ -34,6 +35,28 @@ a {
 Helper Class
 
 */
+
+/* 
+
+component
+
+*/
+
+.btn {
+  display: block;
+  border-radius: 10rem;
+  background-color: var(--dark);
+  color: var(--white);
+  width: 18rem;
+  height: 4.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: "Roboto Medium";
+}
+
 /* 
 
 -- App style --
@@ -45,7 +68,7 @@ Helper Class
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 70rem;
+  min-height: 80vh;
   border-bottom-left-radius: 7.5rem;
   border-bottom-right-radius: 7.5rem;
 }
@@ -197,23 +220,23 @@ Helper Class
 
 */
 
-.header__links {
+.nav__links {
   display: none;
 }
 
-.header__link {
+.nav__link {
   color: var(--white);
   font-family: "Roboto Medium";
   margin-left: 2rem;
 }
 
-.header__link--border {
+.nav__link--border {
   border: 0.1rem solid var(--menu-color);
   padding: 1rem 2.5rem;
   border-radius: 2rem;
   transition: border-color 100ms ease-in, background-color 100ms ease-in;
 }
-.header__link--changes:hover {
+.nav__link--changes:hover {
   border-color: var(--white);
   background-color: #37474fa7;
 }
@@ -276,4 +299,38 @@ Helper Class
 
 .nav__btn--open .nav__btn-line::after {
   transform: rotate(-45deg) translate(3px, -4px);
+}
+
+/* 
+
+======================
+    Header Content
+======================
+
+*/
+.header-content {
+  max-width: 45rem;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 6rem;
+  text-align: center;
+  color: var(--white);
+}
+
+.header-content__title {
+  line-height: 1.5;
+  font-family: "Archivo Black";
+  font-size: 4rem;
+  margin-bottom: 2.8rem;
+}
+
+.header-content__caption {
+  margin-bottom: 1.8rem;
+  font-size: 1.5rem;
+}
+
+.header-content__link {
+  background-color: var(--orange);
+  font-size: 1.4rem;
+  letter-spacing: 0.1rem;
 }
