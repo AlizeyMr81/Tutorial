@@ -1,19 +1,26 @@
 @media (min-width: 576px) {
-   
+}
+
+@media (min-width: 768px) {
+  .nav__btn {
+    display: none;
   }
-  
-  @media (min-width: 768px) {
-   
+
+  .menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-  
-  @media (min-width: 992px) {
-    
+}
+
+@media (min-width: 992px) {
+  .header__links {
+    display: block;
   }
-  
-  @media (min-width: 1200px) {
-   
-  }
-  
-  @media (min-width: 1400px) {
-    
-  }
+}
+
+@media (min-width: 1200px) {
+}
+
+@media (min-width: 1400px) {
+}
