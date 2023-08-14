@@ -34,9 +34,6 @@ a {
 Helper Class
 
 */
-.color-link {
-  color: var(--menu-color);
-}
 /* 
 
 -- App style --
@@ -81,6 +78,35 @@ Helper Class
   margin-left: 2rem;
 }
 
+.menu__link {
+  color: var(--menu-color);
+  transition: color 100ms ease-in;
+}
+.menu__link:hover {
+  color: var(--white);
+}
+
+.menu__link--active {
+  position: relative;
+  z-index: 20;
+  color: var(--white);
+}
+
+.menu__link--active::before {
+  content: "";
+  background-color: var(--orange);
+  position: absolute;
+  top: 0.8rem;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  width: 4rem;
+  height: 0.2rem;
+  border-radius: 10rem;
+  transform: rotate(45deg);
+  z-index: -1;
+}
+
 .nav-menu {
   position: fixed;
   top: 0;
@@ -104,6 +130,7 @@ Helper Class
 }
 
 .mobile-menu__link {
+  color: var(--menu-color);
 }
 
 .nav-menu__links {
@@ -114,6 +141,7 @@ Helper Class
 
 .nav-menu__link {
   flex-grow: 1;
+  color: var(--menu-color);
 }
 
 .nav-menu__link--border {
@@ -128,7 +156,7 @@ Helper Class
 }
 
 .header__link {
-  color: #fff;
+  color: var(--white);
   font-family: "Roboto Medium";
   margin-left: 2rem;
 }
@@ -137,6 +165,11 @@ Helper Class
   border: 0.1rem solid var(--menu-color);
   padding: 1rem 2.5rem;
   border-radius: 2rem;
+  transition: border-color 100ms ease-in, background-color 100ms ease-in;
+}
+.header__link--changes:hover {
+  border-color: var(--white);
+  background-color: #37474fa7;
 }
 
 .nav__btn {
@@ -157,7 +190,7 @@ Helper Class
   background-color: var(--orange);
   border-radius: 0.2rem;
   position: relative;
-  transition: all 150ms ease-in-out;
+  transition: all 200ms ease-in-out;
 }
 
 .nav__btn-line::after,
@@ -168,7 +201,7 @@ Helper Class
   background-color: var(--orange);
   border-radius: 0.2rem;
   position: absolute;
-  transition: all 200ms ease-in-out;
+  transition: all 100ms ease-in-out;
 }
 
 .nav__btn-line::after {
