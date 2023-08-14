@@ -1,5 +1,7 @@
 :root {
   --orange: #e76f51;
+  --menu-color: #d2d2d2;
+  --white: #fff;
 }
 html {
   box-sizing: border-box;
@@ -33,7 +35,7 @@ Helper Class
 
 */
 .color-link {
-  color: #d2d2d2;
+  color: var(--menu-color);
 }
 /* 
 
@@ -46,6 +48,9 @@ Helper Class
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  height: 55rem;
+  border-bottom-left-radius: 7.5rem;
+  border-bottom-right-radius: 7.5rem;
 }
 .nav {
   display: flex;
@@ -66,13 +71,17 @@ Helper Class
   display: none;
 }
 .nav-menu {
-  position: absolute;
+  position: fixed;
   top: 0;
-  left: -200px;
+  left: -20rem;
   bottom: 0;
   background-color: var(--orange);
   padding: 2rem 1.5rem;
   width: 20rem;
+  transition: all 200ms ease-in-out;
+}
+.nav-menu--open {
+  left: 0;
 }
 .mobile-menu {
 }
@@ -87,11 +96,13 @@ Helper Class
   align-items: center;
 }
 .nav-menu__link {
+  flex-grow: 1;
 }
 .nav-menu__link--border {
-  border: 1px solid #fff;
+  border: 1px solid var(--white);
   border-radius: 4.5rem;
   padding: 0.5rem 1.5rem;
+  text-align: center;
 }
 .header__links {
   display: none;
@@ -101,7 +112,7 @@ Helper Class
 .header__link--border {
 }
 .nav__btn {
-  background-color: #fff;
+  background-color: var(--white);
   width: 5rem;
   height: 5rem;
   border-radius: 42%;
@@ -139,8 +150,8 @@ Helper Class
   background-color: transparent;
 }
 .nav__btn--open .nav__btn-line::before {
-   transform:rotate(45deg) translate(5px , 6px);;
+  transform: rotate(45deg) translate(5px, 6px);
 }
 .nav__btn--open .nav__btn-line::after {
- transform:rotate(-45deg) translate(3px , -4px) ;
+  transform: rotate(-45deg) translate(3px, -4px);
 }
