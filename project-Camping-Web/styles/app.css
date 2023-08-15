@@ -1,8 +1,12 @@
 :root {
   --orange: #e76f51;
+  --app-bg: #faf4f2;
   --menu-color: #d2d2d2;
   --white: #fff;
   --dark: #3b3735;
+  --primary-font: "Roboto", Arial, Helvetica, sans-serif;
+  --primary-font-md: "Roboto Medium", Arial, Helvetica, sans-serif;
+  --secondary-font: "Archivo Black", Arial, Helvetica, sans-serif;
 }
 html {
   box-sizing: border-box;
@@ -16,9 +20,10 @@ html {
 }
 
 body {
-  font-family: "Roboto";
+  font-family: var(--primary-font);
   line-height: 1.6;
   font-size: 1.6rem;
+  background-color: var(--app-bg);
 }
 
 /* 
@@ -35,7 +40,9 @@ a {
 Helper Class
 
 */
-
+.font-of-titles {
+  font-family: var(--secondary-font);
+}
 /* 
 
 component
@@ -54,7 +61,7 @@ component
   justify-content: center;
   margin-right: auto;
   margin-left: auto;
-  font-family: "Roboto Medium";
+  font-family: var(--primary-font-md);
 }
 
 /* 
@@ -68,7 +75,7 @@ component
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  min-height: 90vh;
+  min-height: 95vh;
   border-bottom-left-radius: 7.5rem;
   border-bottom-right-radius: 7.5rem;
 }
@@ -112,7 +119,7 @@ component
 }
 
 .menu__item {
-  margin-left: 2rem;
+  margin-left: 2.5rem;
 }
 
 .menu__link {
@@ -158,9 +165,23 @@ component
   left: -20rem;
   bottom: 0;
   background-color: var(--orange);
-  padding: 2rem 1.5rem;
+  padding: 2.2rem 2rem;
   width: 20rem;
   transition: all 200ms ease-in-out;
+}
+
+.nav-manu__title {
+  font-family: var(--secondary-font);
+  color: var(--dark);
+}
+
+b {
+  background-color: var(--dark);
+  width: 13rem;
+  height: 0.4rem;
+  display: block;
+  margin: 0.6rem 0 2rem 0;
+  border-radius: 50rem;
 }
 
 .nav-menu--open {
@@ -226,7 +247,7 @@ component
 
 .nav__link {
   color: var(--white);
-  font-family: "Roboto Medium";
+  font-family: var(--primary-font-md);
   margin-left: 2rem;
 }
 
@@ -319,7 +340,7 @@ component
 
 .header-content__title {
   line-height: 1.5;
-  font-family: "Archivo Black";
+  font-family: var(--secondary-font);
   font-size: 4rem;
   margin-bottom: 2.8rem;
 }
@@ -344,4 +365,63 @@ component
   background-color: var(--orange);
   font-size: 1.4rem;
   letter-spacing: 0.1rem;
+}
+
+/* 
+
+   -- main --
+
+*/
+
+.main {
+  text-align: center;
+  margin-top: -8rem;
+}
+
+/* 
+
+===============
+    Features
+===============
+
+*/
+
+.features {
+  margin-top: -8rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.feature {
+  width: 23rem;
+  height: 26rem;
+  background-color: var(--white);
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 4rem;
+  text-align: center;
+  color: var(--dark);
+  border-radius: 2rem;
+  flex-grow: 1;
+}
+
+.feature__img {
+  display: block;
+}
+
+.feature__title {
+  font-family: var(--secondary-font);
+  margin-top: 1.5rem;
+}
+
+.feature__caption {
+  font-size: 1.3rem;
+  max-width: 24rem;
+  margin: 1rem auto 0 auto;
 }

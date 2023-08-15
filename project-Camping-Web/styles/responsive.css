@@ -12,6 +12,10 @@
     display: none;
   }
 
+  .nav-menu {
+    display: none;
+  }
+
   .menu {
     display: flex;
     align-items: center;
@@ -23,6 +27,7 @@
   .nav__links {
     display: block;
   }
+
   .header-content__caption {
     max-width: 42rem;
   }
