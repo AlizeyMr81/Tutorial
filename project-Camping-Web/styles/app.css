@@ -4,6 +4,7 @@
   --menu-color: #d2d2d2;
   --white: #fff;
   --dark: #3b3735;
+  --color--places-btn: #8d8d8d;
   --primary-font: "Roboto", Arial, Helvetica, sans-serif;
   --primary-font-md: "Roboto Medium", Arial, Helvetica, sans-serif;
   --secondary-font: "Archivo Black", Arial, Helvetica, sans-serif;
@@ -396,7 +397,7 @@ b {
 }
 
 .feature {
-  width: 23rem;
+  width: 24rem;
   height: 26rem;
   background-color: var(--white);
   margin-bottom: 2rem;
@@ -404,7 +405,6 @@ b {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 0 4rem;
   text-align: center;
   color: var(--dark);
   border-radius: 2rem;
@@ -424,4 +424,143 @@ b {
   font-size: 1.3rem;
   max-width: 24rem;
   margin: 1rem auto 0 auto;
+  max-width: 23rem;
+}
+
+/* 
+
+================
+   Activities
+================
+
+*/
+
+.activites {
+  margin: 6rem 0;
+}
+.activites__content {
+  width: 24rem;
+  height: 20rem;
+  margin: 0 auto;
+}
+.activites__img {
+}
+.activites__title {
+  font-family: var(--secondary-font);
+  font-size: 2rem;
+  color: var(--dark);
+}
+.activites__btn {
+  background-color: var(--white);
+  color: var(--orange);
+  font-family: var(--primary-font-md);
+  border: 0.1rem solid var(--orange);
+  transition: all 100ms ease-in;
+}
+
+.activites__btn:hover {
+  background-color: var(--orange);
+  color: var(--white);
+}
+/* 
+
+================
+   Destination
+================
+
+*/
+
+.destination {
+}
+
+/* 
+
+==============
+   Activity 
+==============
+
+*/
+
+.activity-wrapper-first {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.activity-wrapper-second {
+  display: none;
+  flex-wrap: wrap;
+}
+.activity-wrapper-third {
+  display: none;
+  flex-wrap: wrap;
+}
+.activity {
+  flex-grow: 1;
+  width: 24rem;
+  height: 35rem;
+  background-color: var(--white);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 4rem auto;
+  border-radius: 2rem;
+}
+.activity__banner {
+  position: relative;
+  background-color: black;
+  border-radius: 2rem;
+  max-width: 25rem;
+  height: 15rem;
+}
+.activity__photo {
+  width: 100%;
+  height: 100%;
+  border-radius: 2rem;
+  display: block;
+  object-fit: cover;
+  opacity: 0.8;
+}
+
+.activity__like {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  background-color: var(--white);
+  display: block;
+  padding: 0.8rem 0.8rem;
+  border-radius: 1.5rem;
+  cursor: pointer;
+}
+.activity__price {
+  background-color: var(--white);
+  position: absolute;
+  top: 85%;
+  left: 0;
+  right: 0;
+  width: 12rem;
+  margin: 0 auto;
+  padding: 1rem 0;
+  border-radius: 1.5rem;
+  display: block;
+  color: var(--orange);
+  font-size: 1.4rem;
+}
+.activity__content {
+  margin-top: 2rem;
+  color: var(--dark);
+}
+.activity__title {
+  font-family: var(--secondary-font);
+}
+.activity__caption {
+  font-size: 1.4rem;
+  margin: 0.8rem 0 2rem 0;
+  max-width: 26rem;
+}
+.activity__link {
+  color: var(--color--places-btn);
+  font-family: var(--primary-font-md);
+  background-color: rgba(141, 141, 141, 0.1);
 }
