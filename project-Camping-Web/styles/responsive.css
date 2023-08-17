@@ -34,11 +34,7 @@
 }
 
 @media (min-width: 1200px) {
-  .activity-wrapper-second,
-  .activity-wrapper-third {
-    display: flex;
-    gap: 2rem;
-  }
+
 }
 
 @media (min-width: 1400px) {

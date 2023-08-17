@@ -481,20 +481,13 @@ b {
 
 */
 
-.activity-wrapper-first {
+.places-wrapper {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
 }
-.activity-wrapper-second {
-  display: none;
-  flex-wrap: wrap;
-}
-.activity-wrapper-third {
-  display: none;
-  flex-wrap: wrap;
-}
-.activity {
+
+.place {
   flex-grow: 1;
   width: 24rem;
   height: 35rem;
