@@ -438,11 +438,13 @@ b {
   margin: 6rem 0;
 }
 .activites__content {
-  width: 24rem;
+  max-width: 24rem;
   height: 20rem;
   margin: 0 auto;
 }
 .activites__img {
+  width: 8rem;
+  height: 8rem;
 }
 .activites__title {
   font-family: var(--secondary-font);
@@ -459,7 +461,7 @@ b {
 
 .activites__btn:hover {
   background-color: var(--orange);
-  color: var(--white);
+  color: var(--app-bg);
 }
 
 /* 
