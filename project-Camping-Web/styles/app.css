@@ -27,6 +27,7 @@ body {
   line-height: 1.6;
   font-size: 1.6rem;
   background-color: var(--app-bg);
+  overflow-x: hidden;
 }
 
 /* 
@@ -438,7 +439,34 @@ b {
 .activities {
   margin: 6rem 0;
   padding: 0 1rem;
+  position: relative;
 }
+
+.activities::before {
+  content: "";
+  position: absolute;
+  top: -5rem;
+  bottom: 0;
+  right: -25rem;
+  background: url("../images/svgs/shape1.svg") no-repeat ;
+  width: 50rem;
+  height: 50rem;
+  background-size: contain;
+  z-index: -1;
+}
+
+.activities::after {
+  content: "";
+  position: absolute;
+  bottom: 35rem;
+  left: -30rem;
+  background: url("../images/svgs/shape2.svg") no-repeat ;
+  width: 50rem;
+  height: 50rem;
+  background-size: contain;
+  z-index: -1;
+}
+
 .activities__content {
   max-width: 24rem;
   height: 20rem;
