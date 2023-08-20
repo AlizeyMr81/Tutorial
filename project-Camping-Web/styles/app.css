@@ -12,7 +12,7 @@
 }
 html {
   box-sizing: border-box;
-  font-size: 62.5%; /* 10px */
+  font-size: 62.5%; /* 10px */;
   scroll-behavior: smooth;
 }
 
@@ -77,7 +77,7 @@ component
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  min-height: 95vh;
+  min-height: 65rem;
   border-bottom-left-radius: 7.5rem;
   border-bottom-right-radius: 7.5rem;
 }
@@ -170,6 +170,7 @@ component
   padding: 2.2rem 2rem;
   width: 20rem;
   transition: all 200ms ease-in-out;
+  z-index: 100;
 }
 
 .nav-manu__title {
@@ -377,7 +378,6 @@ b {
 
 .main {
   text-align: center;
-  margin-top: -8rem;
 }
 
 /* 
@@ -435,25 +435,25 @@ b {
 
 */
 
-.activites {
+.activities {
   margin: 6rem 0;
   padding: 0 1rem;
 }
-.activites__content {
+.activities__content {
   max-width: 24rem;
   height: 20rem;
   margin: 0 auto;
 }
-.activites__img {
+.activities__img {
   width: 8rem;
   height: 8rem;
 }
-.activites__title {
+.activities__title {
   font-family: var(--secondary-font);
   font-size: 2rem;
   color: var(--dark);
 }
-.activites__btn {
+.activities__btn {
   background-color: var(--white);
   color: var(--primary-color);
   font-family: var(--primary-font-md);
@@ -571,17 +571,32 @@ b {
   align-items: center;
   padding: 3rem 1rem;
   margin: 6rem 0;
+  position: relative;
+  overflow: hidden;
 }
-.newsletters__banner {
- 
+ .newsletters::before {
+   content: "";
+   position: absolute;
+   top: 15rem;
+   bottom: 0;
+   left: -15rem;
+   right: 0;
+   background: url("../images/svgs/shape3.svg") no-repeat;
+   width: 45rem;
+   height: 45rem;
+   background-size: contain;
+
+}
+.newsletters__banner,
+.newsletters__content {
+  z-index: 2;
 }
 .newsletters__img {
   width: 100%;
   height: 100%;
   display: block;
 }
-.newsletters__content {
-}
+
 .newsletters__title {
   font-family: var(--secondary-font);
   font-size: 2.8rem;
@@ -673,7 +688,7 @@ b {
 }
 .footer__description {
   margin-bottom: 2rem;
-  flex-grow: 1;
+  max-width: 52rem;
 }
 .footer__title {
   font-family: var(--secondary-font);
@@ -681,23 +696,21 @@ b {
 }
 .footer__caption {
   font-size: 1.4rem;
-  max-width: 55rem;
 }
 .footer-content {
    display: flex;
    margin-bottom: 2rem;
 }
 .footer-site-information {
-
+  flex-grow: 1;
 }
 
 .footer-plan {
-  margin-left: 1rem;
+  flex-grow: 1;
 }
 
 .footer-supports {
   margin-bottom: 1.6rem;
-  flex-grow: 1;
 }
 
 .footer-pages {
@@ -716,14 +729,11 @@ b {
 
 .app-download{
   margin-bottom: 2rem;
-  max-width: 25rem;
-  flex-grow: 1;
 }
 .app-download__banner {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
   gap: 1rem;
 }
 
