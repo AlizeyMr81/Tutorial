@@ -1,5 +1,5 @@
 :root {
-  --primary-color: #e76f51;
+  --primary-color: #E76F51;
   --secondary-color: #f8e1db;
   --app-bg: #faf4f2;
   --menu-color: #d2d2d2;
@@ -646,7 +646,7 @@ b {
   justify-content: space-between;
   padding: 1.2rem;
   border-radius: 2rem;
-  box-shadow: 0.2rem 0.2rem 2.5rem -1.8rem black;
+  box-shadow: 0 0 1rem rgba(59, 55, 53, 0.15);
 }
 
 .newsletters__email-icon {
@@ -673,6 +673,7 @@ b {
   height: 5rem;
   border-radius: 2rem;
   cursor: pointer;
+  box-shadow: 0 0 1rem rgba(231, 111, 81, 0.5);
 }
 
 /*
@@ -707,7 +708,7 @@ b {
   align-items: center;
   justify-content: center;
   border-radius: 2rem;
-  box-shadow: 0.2rem 0.2rem 2.5rem -1.8rem black;
+  box-shadow: 0 0 1rem rgba(59, 55, 53, 0.1);
 }
 
 .footer__wrapper {
