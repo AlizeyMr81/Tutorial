@@ -14,7 +14,33 @@ body {
 
 /* 
 
-1 Row => 12 Column
+( 1 Row => 12 Column )
+
+
+1 col =8.333333333%
+
+2 col =16.66666666%
+
+3 col =25%
+
+4 col =33.33333333%
+
+5 col =41.66666666%
+
+6 col =50%
+
+7 col =58.33333333%
+
+8 col =66.66666666%
+
+9 col =75%
+
+10 col =83.3333333%
+
+11 col =91.66666666%
+
+12 col =100%
+
 
 */
 
@@ -37,6 +63,13 @@ body {
 .col {
   max-width: 100%;
   flex-grow: 1;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.content {
+  background-color: rgb(26, 200, 243);
+  height: 10rem;
 }
 
 @media (min-width: 576px) {
