@@ -12,36 +12,55 @@ body {
   margin: 0;
 }
 
+/* 
+
+1 Row => 12 Column
+
+*/
+
 .container {
   width: 100%;
-  padding-right: 15rem;
-  padding-left: 15rem;
+  padding-right: 15px;
+  padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
   position: relative;
 }
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.col {
+  max-width: 100%;
+  flex-grow: 1;
+}
+
 @media (min-width: 576px) {
   .container {
-    width: 54rem;
+    width: 540px;
   }
 }
 @media (min-width: 768px) {
   .container {
-    width: 72rem;
+    width: 720px;
   }
 }
 @media (min-width: 992px) {
   .container {
-    width: 96rem;
+    width: 960px;
   }
 }
 @media (min-width: 1200px) {
   .container {
-    width: 114rem;
+    width: 1140px;
   }
 }
 @media (min-width: 1400px) {
   .container {
-    width: 137rem;
+    width: 1370px;
   }
 }
