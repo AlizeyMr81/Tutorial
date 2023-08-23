@@ -8,43 +8,6 @@ html {
   box-sizing: inherit;
 }
 
-body {
-  margin: 0;
-}
-
-.content {
-  background-color: rgb(26, 200, 243);
-  height: 15rem;
-}
-
-/* 
-
-- Colors
-
-*/
-
-.yellow {
-  background-color: #f3dd48;
-}
-
-.violet {
-  background-color: #9068ff;
-}
-
-.pink {
-  background-color: #ff68cd;
-}
-
-.green {
-  background-color: #3bf8d8;
-}
-
-/* 
-
-Grid System
-
-*/
-
 .container {
   width: 100%;
   padding-right: 15px;
@@ -54,12 +17,19 @@ Grid System
   position: relative;
 }
 
+/* 
+
+Grid System
+
+*/
+
 .row {
   display: flex;
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
 }
+
 .row > * {
   padding-right: 15px;
   padding-left: 15px;
@@ -68,7 +38,7 @@ Grid System
 
 .col {
   max-width: 100%;
-  flex-grow: 1
+  flex-grow: 1;
 }
 
 .col-1 {
@@ -80,6 +50,7 @@ Grid System
   flex: 0 0 auto;
   width: 16.66666666%;
 }
+
 .col-3 {
   flex: 0 0 auto;
   width: 25%;

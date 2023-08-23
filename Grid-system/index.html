@@ -4,16 +4,44 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Grid System</title>
-    <link rel="stylesheet" href="app.css" />
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/grid.css" />
+    <link rel="stylesheet" href="styles/app.css" />
   </head>
   <body>
-   <div class="container">
-    <div class="row">
-        <div class="col"><div class="content"></div></div>
-        <div class="col-12 col-sm-6 col-md-5 col-lg-3"><div class="content"></div></div>
-        <div class="col-12 col-sm-6 col-md-5 col-lg-3"><div class="content"></div></div>
-        <div class="col-12 col-sm-6 col-lg-3"><div class="content"></div></div>
+    <div class="container">
+      <header class="header">
+        <div class="row">
+          <div class="col-12"><div class="content yellow">Header</div></div>
+        </div>
+      </header>
+      <main class="main">
+        <div class="banners">
+          <div class="row">
+            <div class="col-6"><div class="content violet">Banner</div></div>
+            <div class="col-6"><div class="content violet">Banner</div></div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="row">
+            <div class="col-3"><div class="content pink">Product</div></div>
+            <div class="col-3"><div class="content pink">Product</div></div>
+            <div class="col-3"><div class="content pink">Product</div></div>
+            <div class="col-3"><div class="content pink">Product</div></div>
+          </div>
+        </div>
+        <div class="amazing-sale">
+          <div class="row">
+            <div class="col-3"><div class="content green">Sale</div></div>
+            <div class="col-9"><div class="content green">Sale</div></div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="row">
+          <div class="col-12"><div class="content yellow">Footer</div></div>
+        </div>
+      </footer>
     </div>
-   </div>
   </body>
 </html>
