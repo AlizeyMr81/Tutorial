@@ -1,13 +1,29 @@
-:root {
-  --text-color: #333333;
-  --shadow-color: rgba(19, 182, 255, 0.24);
-  --app-bg-color:#fff;
-  --section-bg-color:#fff;
-}
-
 @import "normalize.css";
 @import "fonts.css";
 @import "grid.css";
+
+:root {
+  --text-color: #333333;
+  --app-bg-color: #fff;
+  --section-bg-color: #fff;
+  --primary-color: #0abead;
+}
+
+/* 
+
+--Reset Styles
+
+*/
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
 
 /* 
 
@@ -25,4 +41,88 @@ body {
   font-family: "Poppins";
   font-size: 1.6rem;
   line-height: 1.5;
+}
+
+/* 
+
+  --Header
+
+*/
+
+/* 
+
+
+================
+  Desktop Menu
+================
+
+
+*/
+
+.header {
+  height: 8rem;
+  background-color: var(--section-bg-color);
+  box-shadow: 0 0.5rem 5rem rgba(4, 195, 255, 16%);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav__logo {
+  color: var(--primary-color);
+  font-family: "Poppins Black";
+  font-size: 4rem;
+  margin: 0;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 3rem;
+}
+
+.menu__item {
+}
+
+.menu__link {
+  color: var(--text-color);
+  font-family: "Poppins Medium";
+  display: block;
+}
+.menu__link-active {
+  color: var(--primary-color);
+}
+
+/* 
+
+
+================
+  Mobile Menu
+================
+
+
+*/
+
+.nav__toggle-icon {
+  display: none;
+}
+
+.nav__toggle-line {
+}
+
+.nav__mobile {
+  display: none;
+}
+
+.mobile-menu {
+}
+
+.mobile-menu__item {
+}
+
+.mobile-menu__link {
 }

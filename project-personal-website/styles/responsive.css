@@ -1,0 +1,24 @@
+@media (max-width: 1400px) {
+}
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 992px) {
+  .menu {
+    gap: 2.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+
+  .nav__btn {
+    display: block;
+  }
+}
+
+@media (max-width: 576px) {
+}
