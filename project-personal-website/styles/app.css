@@ -7,6 +7,7 @@
   --app-bg-color: #fff;
   --section-bg-color: #fff;
   --primary-color: #0abead;
+  --secondary-color: #f57f17;
 }
 
 /* 
@@ -28,6 +29,30 @@ a {
 /* 
 
 
+--Components
+
+
+*/
+
+.app-btn {
+  width: 17rem;
+  height: 5rem;
+  border-radius: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-color);
+  box-shadow: 0.1rem 1rem 2rem rgba(9, 190, 173, 41%);
+}
+
+.app-btn--orang {
+  background-color: var(--secondary-color);
+  box-shadow: 0.1rem 1rem 2rem rgba(245, 127, 23, 24%);
+}
+
+/* 
+
+
 --App
 
 
@@ -41,6 +66,8 @@ body {
   font-family: "Poppins";
   font-size: 1.6rem;
   line-height: 1.5;
+  color: var(--text-color);
+  background-color: var(--app-bg-color);
 }
 
 /* 
@@ -78,7 +105,7 @@ body {
 .nav__logo {
   color: var(--primary-color);
   font-family: "Poppins Black";
-  font-size: 4rem;
+  font-size: 6rem;
   margin: 0;
 }
 
@@ -97,6 +124,7 @@ body {
   color: var(--text-color);
   font-family: "Poppins Medium";
   display: block;
+  font-size: 1.4rem;
   transition: color 150ms ease-in;
 }
 .menu__link-active {
@@ -214,3 +242,73 @@ body {
   color: var(--primary-color);
 }
 
+/* 
+
+
+--Main
+
+
+*/
+
+/* 
+
+================
+  Home Section
+================
+
+*/
+
+.main {
+}
+
+.home {
+  padding: 8rem 0 0 0;
+}
+
+.row {
+  align-items: center;
+}
+
+.home__content {
+}
+
+.home__name {
+  color: var(--primary-color);
+  margin: 0;
+  font-family: "Poppins SemiBold";
+}
+
+.home__name span {
+  color: var(--secondary-color);
+}
+
+.home__title {
+  color: var(--primary-color);
+  font-size: 3rem;
+  margin: 1rem 0;
+  font-family: "Poppins Bold";
+}
+
+.home__caption {
+  font-size: 1.4rem;
+}
+
+.home__links-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.home__link {
+  font-family: "Poppins SemiBold";
+  color: #fff;
+}
+
+.home__picture {
+  /* margin-top: 2rem; */
+  width: 100%;
+  height: 50rem;
+  background: url("../images/header-avatar.jpg") no-repeat center;
+  background-size: cover;
+  border-radius: 30rem;
+}
