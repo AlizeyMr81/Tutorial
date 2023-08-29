@@ -54,12 +54,7 @@ a {
 }
 
 .section-head {
-  max-width: 20rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  margin: 0 auto;
+  text-align: center;
   margin-bottom: 6rem;
 }
 
@@ -81,6 +76,7 @@ a {
   height: 0.2rem;
   background-color: var(--primary-color);
   position: relative;
+  margin: 0 auto;
 }
 
 .section-head__line::after {
@@ -454,4 +450,64 @@ body {
   display: flex;
   gap: 1.5rem;
   margin-top: 3.5rem;
+}
+
+/* 
+
+
+=============
+   Services
+=============
+
+
+*/
+
+.services {
+  margin-top: 8rem;
+}
+.services__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 35rem;
+  color: #fff;
+}
+
+.services__title {
+  font-size: 2rem;
+  font-family: "Poppins Bold";
+  margin: 1rem 0;
+}
+.services__description {
+  font-size: 1.4rem;
+  padding: 0 2.8rem;
+  margin: 0 0 3rem 0;
+}
+
+/* 
+
+===========================
+   Background Color items
+===========================
+
+*/
+.services__bgc-purple {
+  background-color: #803afb;
+}
+.services__bgc-yellow {
+  background-color: #ffc50c;
+}
+.services__bgc-red {
+  background: #ec407a url("../images/shapes/service-shape.svg") no-repeat bottom;
+  background-size: contain;
+}
+.services__bgc-orange {
+  background-color: #ff6331;
+}
+.services__bgc-blue {
+  background-color: #13b6ff;
+}
+.services__bgc-green {
+  background-color: #49af46;
 }
