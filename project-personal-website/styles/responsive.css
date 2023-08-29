@@ -18,7 +18,7 @@
   }
 
   .home {
-    height: 65rem;
+    height: 60rem;
   }
 
   .home__title {
@@ -27,6 +27,11 @@
 
   .home__name {
     font-size: 1.5rem;
+  }
+
+  .about__picture,
+  .about__content {
+    flex-basis: 50%;
   }
 }
 
@@ -61,6 +66,7 @@
 
   .home {
     background-image: none;
+    height: auto;
   }
 
   .flex-col-reverse {
@@ -79,15 +85,46 @@
     width: 35rem;
     height: 35rem;
   }
+
+  .about {
+    flex-direction: column;
+  }
+
+  .about__picture,
+  .about__content {
+    flex-basis: auto;
+  }
 }
 
 @media (max-width: 576px) {
   .home__picture {
-    width: 27.5rem;
-    height: 27.5rem;
+    width: 25rem;
+    height: 25rem;
   }
 
   .home__caption {
     font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 410px) {
+  .home__links-wrapper {
+    flex-wrap: wrap;
+  }
+
+  .home__link {
+    width: 100%;
+  }
+
+  .about__content {
+    padding-left: 1.8rem;
+  }
+
+  .about__links {
+    flex-wrap: wrap;
+  }
+
+  .about__link {
+    width: 100%;
   }
 }
