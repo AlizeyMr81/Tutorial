@@ -108,6 +108,11 @@
   .service {
     padding: 4rem 1rem;
   }
+
+  .resume__wrapper {
+    flex-direction: column-reverse;
+  }
+
 }
 
 @media (max-width: 576px) {
@@ -153,4 +158,10 @@
   .service__wave {
     display: block;
   }
+
+  .resume-sample__year {
+    position: static;
+    margin-top: 1rem;
+  }
+
 }
