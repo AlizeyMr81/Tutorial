@@ -119,6 +119,7 @@ a {
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -319,16 +320,10 @@ body {
 
 */
 
-.main {
-}
-
 .home {
   margin-top: 8rem;
   background: url("../images/shapes/header-shape.svg") no-repeat bottom;
   height: 75rem;
-}
-
-.home__content {
 }
 
 .home__name {
@@ -362,8 +357,8 @@ body {
 }
 
 .home__picture {
-  width: 47rem;
-  height: 47rem;
+  width: 42.5rem;
+  height: 42.5rem;
   background: url("../images/header-avatar.jpg") center no-repeat;
   background-size: cover;
   border-radius: 100%;
@@ -382,8 +377,7 @@ body {
 */
 
 .about-us {
-  margin-top: 8rem;
-  margin-bottom: 8rem;
+  padding-top: 10rem;
 }
 
 .about {
@@ -463,51 +457,64 @@ body {
 */
 
 .services {
-  margin-top: 8rem;
+  padding-top: 10rem;
 }
-.services__item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 35rem;
+.service {
+  padding: 8rem 4rem;
+  text-align: center;
   color: #fff;
+  position: relative;
+  z-index: 5;
+  height: 100%;
 }
 
-.services__title {
+.service__title {
   font-size: 2rem;
   font-family: "Poppins Bold";
   margin: 1rem 0;
 }
-.services__description {
+.service__description {
   font-size: 1.4rem;
-  padding: 0 2.8rem;
-  margin: 0 0 3rem 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.service__wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
 }
 
 /* 
 
 ===========================
-   Background Color items
+    Service Color-Shadow
 ===========================
 
 */
-.services__bgc-purple {
+.service--purple {
   background-color: #803afb;
+  box-shadow: 0 0 4rem rgba(118, 13, 255, 35%);
 }
-.services__bgc-yellow {
+.service--yellow {
   background-color: #ffc50c;
+  box-shadow: 0 0 4rem rgba(255, 197, 12, 35%);
 }
-.services__bgc-red {
-  background: #ec407a url("../images/shapes/service-shape.svg") no-repeat bottom;
-  background-size: contain;
+.service--red {
+  background-color: #ec407a;
+  box-shadow: 0 0 4rem rgba(236, 64, 122, 35%);
 }
-.services__bgc-orange {
+.service--orange {
   background-color: #ff6331;
+  box-shadow: 0 0 4rem rgba(255, 99, 49, 35%);
 }
-.services__bgc-blue {
+.service--blue {
   background-color: #13b6ff;
+  box-shadow: 0 0 4rem rgba(19, 182, 255, 35%);
 }
-.services__bgc-green {
+.service--green {
   background-color: #49af46;
+  box-shadow: 0 0 4rem rgba(73, 175, 70, 35%);
 }
