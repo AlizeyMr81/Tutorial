@@ -518,3 +518,134 @@ body {
   background-color: #49af46;
   box-shadow: 0 0 4rem rgba(73, 175, 70, 35%);
 }
+
+/* 
+
+===========
+   Resume
+===========
+
+*/
+
+.resume {
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+}
+.resume__wrapper {
+  display: flex;
+  gap: 3.5rem;
+  transform: skew(0);
+}
+.condition {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-basis: 40%;
+  position: relative;
+  z-index: 5;
+}
+.condition__item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+}
+
+.condition__item--bgc {
+  background-color: var(--primary-color);
+  width: 25rem;
+  border-radius: 3rem;
+}
+.condition__line {
+  position: absolute;
+  background-color: var(--primary-color);
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 4rem;
+  z-index: -1;
+}
+.condition__shape {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-color);
+  width: 5.5rem;
+  height: 4.5rem;
+  border-radius: 3rem;
+}
+
+.condition__icon {
+  background-color: var(--primary-color);
+  margin-right: 1.5rem;
+}
+.condition__text {
+  margin-bottom: 1.5rem;
+  font-family: "Poppins SemiBold";
+}
+
+.condition__text--color {
+  margin: 0;
+  color: #fff;
+}
+.resume-sample {
+  flex-basis: 60%;
+  position: relative;
+}
+
+.resume-sample__line {
+  content: "";
+  position: absolute;
+  width: 0.2rem;
+  background: var(--primary-color);
+  top: 0;
+  bottom: 0;
+  left: 0.8rem;
+}
+
+.resume-sample__item {
+  position: relative;
+  padding-left: 3rem;
+}
+
+.resume-sample__item::before {
+  content: "";
+  position: absolute;
+  background-color: var(--primary-color);
+  top: 0.8rem;
+  left: 0.2rem;
+  margin: auto 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 100%;
+}
+
+.resume-sample__title {
+  color: #ff5823;
+  font-family: "Poppins SemiBold";
+  font-size: 2rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+.resume-sample__name {
+  font-family: "Poppins SemiBold";
+  margin-top: 0;
+  margin-bottom: 0.6rem;
+}
+.resume-sample__caption {
+  font-size: 1.4rem;
+  margin: 0;
+}
+
+.resume-sample__year {
+  position: absolute;
+  display: inline-block;
+  background-color: var(--secondary-color);
+  top: 0;
+  right: 0;
+  border-radius: 2rem;
+  font-size: 1.4rem;
+  color: #fff;
+  padding: 0.2rem 1rem;
+  box-shadow: 0 0 4rem rgba(245, 127, 23, 24%);
+}
