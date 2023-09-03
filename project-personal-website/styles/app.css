@@ -731,10 +731,9 @@ body {
   overflow: hidden;
   transition: opacity 200ms ease-in;
 }
-.portfolio-content--active {
+.portfolio-content--show {
   height: auto;
   opacity: 1;
-  overflow: visible;
 }
 
 .list-portfolio__item--active {

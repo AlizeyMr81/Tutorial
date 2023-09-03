@@ -691,11 +691,8 @@
             <li class="list-portfolio__item">Social Media</li>
             <li class="list-portfolio__item">Print Design</li>
           </ul>
-          <div
-            class="portfolio-content portfolio-content--active"
-            id="all-work"
-          >
-            <div class="swiper">
+          <div class="portfolio-content portfolio-content--show" id="all-work">
+            <div class="swiper1">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <img
@@ -737,11 +734,25 @@
             </div>
           </div>
           <div class="portfolio-content" id="illustration">
-            <div class="swiper">
+            <div class="swiper2">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <img
                     src="images/portfolio-1.jpg"
+                    class="portfolio-content__img"
+                    alt="Portfolio Image"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="images/portfolio-2.jpg"
+                    class="portfolio-content__img"
+                    alt="Portfolio Image"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="images/portfolio-2.jpg"
                     class="portfolio-content__img"
                     alt="Portfolio Image"
                   />
@@ -765,7 +776,7 @@
             </div>
           </div>
           <div class="portfolio-content" id="animation">
-            <div class="swiper">
+            <div class="swiper3">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <img
@@ -776,7 +787,14 @@
                 </div>
                 <div class="swiper-slide">
                   <img
-                    src="images/portfolio-3.jpg"
+                    src="images/portfolio-2.jpg"
+                    class="portfolio-content__img"
+                    alt="Portfolio Image"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="images/portfolio-1.jpg"
                     class="portfolio-content__img"
                     alt="Portfolio Image"
                   />
@@ -799,7 +817,7 @@
     <script src="scripts/app.js"></script>
     <script src="scripts/swiper-bundle.min.js"></script>
     <script type="text/javascript">
-      const swiper = new Swiper(".swiper", {
+      const swiperOptions = {
         pagination: {
           el: ".swiper-pagination",
         },
@@ -812,7 +830,10 @@
             slidesPerView: 3,
           },
         },
-      });
+      };
+      const swiper1 = new Swiper(".swiper1", swiperOptions);
+      const swiper2 = new Swiper(".swiper2", swiperOptions);
+      const swiper3 = new Swiper(".swiper3", swiperOptions);
     </script>
   </body>
 </html>
