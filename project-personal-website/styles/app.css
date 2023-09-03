@@ -583,7 +583,7 @@ body {
   left: 0;
   bottom: 0;
   width: 5.4rem;
-  max-width: 25rem;
+  max-width: 26rem;
   background-color: var(--primary-color);
   z-index: -1;
   border-radius: 3rem;
@@ -592,8 +592,6 @@ body {
 
 .condition__item--active {
   color: #fff;
-  background-color: var(--primary-color);
-  border-radius: 3rem;
 }
 
 .condition__item--active::before {
