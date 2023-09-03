@@ -674,17 +674,27 @@
             <div class="section-head__line"></div>
           </div>
           <ul class="list-portfolio">
-            <li class="list-portfolio__item list-portfolio__item--active">
+            <li
+              class="list-portfolio__item list-portfolio__item--active"
+              data-content-id="#all-work"
+            >
               All Work
             </li>
-            <li class="list-portfolio__item">Illustration</li>
-            <li class="list-portfolio__item">Animation</li>
+            <li class="list-portfolio__item" data-content-id="#illustration">
+              Illustration
+            </li>
+            <li class="list-portfolio__item" data-content-id="#animation">
+              Animation
+            </li>
             <li class="list-portfolio__item">App UI</li>
             <li class="list-portfolio__item">Web UI</li>
             <li class="list-portfolio__item">Social Media</li>
             <li class="list-portfolio__item">Print Design</li>
           </ul>
-          <div class="portfolio-content">
+          <div
+            class="portfolio-content portfolio-content--active"
+            id="all-work"
+          >
             <div class="swiper">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
@@ -708,6 +718,76 @@
                     alt="Portfolio Image"
                   />
                 </div>
+                <div class="swiper-slide">
+                  <img
+                    src="images/portfolio-1.jpg"
+                    class="portfolio-content__img"
+                    alt="Portfolio Image"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="images/portfolio-2.jpg"
+                    class="portfolio-content__img"
+                    alt="Portfolio Image"
+                  />
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+          <div class="portfolio-content" id="illustration">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img
+                    src="images/portfolio-1.jpg"
+                    class="portfolio-content__img"
+                    alt="Portfolio Image"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="images/portfolio-2.jpg"
+                    class="portfolio-content__img"
+                    alt="Portfolio Image"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="images/portfolio-2.jpg"
+                    class="portfolio-content__img"
+                    alt="Portfolio Image"
+                  />
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+          <div class="portfolio-content" id="animation">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img
+                    src="images/portfolio-3.jpg"
+                    class="portfolio-content__img"
+                    alt="Portfolio Image"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="images/portfolio-3.jpg"
+                    class="portfolio-content__img"
+                    alt="Portfolio Image"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="images/portfolio-2.jpg"
+                    class="portfolio-content__img"
+                    alt="Portfolio Image"
+                  />
+                </div>
               </div>
               <div class="swiper-pagination"></div>
             </div>
@@ -722,6 +802,15 @@
       const swiper = new Swiper(".swiper", {
         pagination: {
           el: ".swiper-pagination",
+        },
+        spaceBetween: 35,
+        breakpoints: {
+          768: {
+            slidesPerView: 2,
+          },
+          1200: {
+            slidesPerView: 3,
+          },
         },
       });
     </script>
