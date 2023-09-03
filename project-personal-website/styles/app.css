@@ -759,3 +759,46 @@ body {
 .swiper-pagination-bullet-active {
   border-color: var(--primary-color) !important;
 }
+
+/* 
+
+==============
+   Pricing
+==============
+
+*/
+
+.pricing {
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+}
+.pricing__wrapper {
+
+}
+.pricing__content {
+
+}
+.pricing__title {
+
+}
+.pricing__price {
+
+}
+.pricing__caption {
+
+}
+.list-pricing {
+
+}
+.list-pricing__item {
+
+}
+.list-pricing__icon {
+
+}
+.pricing__btn {
+
+}
+.pricing__link {
+
+}
