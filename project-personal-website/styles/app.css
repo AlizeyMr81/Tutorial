@@ -615,7 +615,7 @@ body {
   transition: all 200ms ease-in;
 }
 
-.resume-content {
+.resume__content {
   flex-basis: 65%;
 }
 
