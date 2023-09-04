@@ -150,6 +150,11 @@
   .service {
     padding: 4rem 1rem;
   }
+
+  .footer__wrapper {
+    flex-direction: column-reverse;
+    gap: 0.8rem;
+  }
 }
 
 @media (max-width: 576px) {

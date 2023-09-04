@@ -877,7 +877,7 @@ body {
   width: 6rem;
   height: 6rem;
   background-color: var(--app-bg-color);
-  box-shadow: 0 0.2rem 4rem rgba(96, 233, 255, 27%);
+  box-shadow: 0 0 4rem rgba(96, 233, 255, 27%);
   border-radius: 100%;
   display: flex;
   align-items: center;
@@ -921,7 +921,7 @@ body {
 
 .contact__input {
   padding-left: 2.5rem;
-  box-shadow: 0 0.2rem 4rem rgba(96, 233, 255, 27%);
+  box-shadow: 0 0 4rem rgba(96, 233, 255, 27%);
   background-color: var(--app-bg-color);
   color: var(--text-color);
 }
@@ -942,4 +942,51 @@ body {
   cursor: pointer;
   color: #fff;
   font-family: "Poppins SemiBold";
+}
+
+/* 
+
+  --Footer
+
+*/
+.footer {
+}
+.footer__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+.footer__copyright {
+}
+.footer__copyright-text {
+  font-family: "Poppins SemiBold";
+  font-size: 1.2rem;
+}
+.footer__social-media {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer__wrapper-icon {
+  background-color: var(--text-color);
+  border-radius: 100%;
+  padding: 0.3rem;
+  box-shadow: 0 0 4rem rgba(96, 233, 255, 27%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 200ms ease-in;
+}
+
+.footer__wrapper-icon:hover {
+  background-color: var(--primary-color);
+}
+
+.footer__icon {
+  width: 2rem;
+  height: 2rem;
+  fill: var(--app-bg-color);
 }
