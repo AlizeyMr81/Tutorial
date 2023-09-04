@@ -950,6 +950,7 @@ body {
 
 */
 .footer {
+  background-color: var(--app-bg-color);
 }
 .footer__wrapper {
   display: flex;
@@ -958,18 +959,17 @@ body {
   padding: 1rem 0;
 }
 .footer__copyright {
-}
-.footer__copyright-text {
   font-family: "Poppins SemiBold";
   font-size: 1.2rem;
+  letter-spacing: 0.4rem;
 }
-.footer__social-media {
+.footer__socials {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
 
-.footer__wrapper-icon {
+.footer__social {
   background-color: var(--text-color);
   border-radius: 100%;
   padding: 0.3rem;
@@ -977,11 +977,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
   transition: background-color 200ms ease-in;
 }
 
-.footer__wrapper-icon:hover {
+.footer__social:hover {
   background-color: var(--primary-color);
 }
 
