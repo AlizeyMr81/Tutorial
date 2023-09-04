@@ -199,7 +199,7 @@ body {
   font-family: "Poppins Medium";
   display: block;
   font-size: 1.4rem;
-  transition: color 150ms ease-in;
+  transition: color 120ms ease-in;
 }
 .menu__link-active {
   color: var(--primary-color);
@@ -246,13 +246,13 @@ body {
 .nav__toggle-line::before {
   top: 1rem;
   position: absolute;
-  transition: all 150ms ease-in;
+  transition: all 120ms ease-in;
 }
 
 .nav__toggle-line::after {
   bottom: 1rem;
   position: absolute;
-  transition: all 150ms ease-in-out;
+  transition: all 120ms ease-in-out;
 }
 
 .nav__toggle-icon--open .nav__toggle-line {
@@ -277,7 +277,7 @@ body {
   height: 0;
   overflow: hidden;
   background-color: var(--section-bg-color);
-  transition: all 150ms ease-in;
+  transition: all 120ms ease-in;
   z-index: 100;
 }
 .mobile-menu {
@@ -618,7 +618,7 @@ body {
 }
 .condition__text {
   margin: 0;
-  font-family: "Poppins SemiBold";
+  font-family: "Poppins";
   transition: all 200ms ease-in;
 }
 
@@ -718,6 +718,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 0.5rem;
   margin-bottom: 4rem;
   font-size: 1.4rem;
   flex-wrap: wrap;
@@ -726,14 +727,14 @@ body {
   cursor: pointer;
   padding: 1rem 3rem;
   border-radius: 2rem;
-  transition: all 200ms ease-in;
+  transition: all 120ms ease-in;
 }
 
 .portfolio-content {
   height: 0;
   opacity: 0;
   overflow: hidden;
-  transition: opacity 200ms ease-in;
+  transition: opacity 120ms ease-in;
 }
 .portfolio-content--show {
   height: auto;
