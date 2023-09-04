@@ -48,19 +48,9 @@ a {
   box-shadow: 0.1rem 1rem 3rem rgba(9, 190, 173, 41%);
 }
 
-.app-btn--orang {
+.app-btn--orange {
   background-color: var(--secondary-color);
   box-shadow: 0.1rem 1rem 3rem rgba(245, 127, 23, 24%);
-}
-
-.app-btn--purple {
-  background-color: #803afb;
-  box-shadow: 0.1rem 1rem 3rem rgba(128, 58, 251, 24%);
-}
-
-.app-btn--pink {
-  background-color: #f5276c;
-  box-shadow: 0.1rem 1rem 3rem rgba(245, 39, 108, 24%);
 }
 
 .section-head {
@@ -780,72 +770,82 @@ body {
 
 .pricing {
   margin-top: 8rem;
-  margin-bottom: 8rem;
   box-shadow: 0 0 6rem rgba(19, 182, 255, 24%);
-  padding: 8rem 0;
+  transform: skewY(-6deg);
   background-color: var(--section-bg-color);
+  padding: 8rem 0 12rem 0;
 }
 
-.pricing__wrapper {
+.package {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   box-shadow: 0 0 4rem rgba(96, 233, 255, 27%);
 }
-.pricing__content {
+.package__head {
   width: 100%;
   padding: 2rem 0;
   color: #fff;
   text-align: center;
 }
 
-.pricing__content--orange {
+.package__head--orange {
   background-color: #ff6331;
 }
-.pricing__content--purple {
+
+.package__head--purple {
   background-color: #803afb;
 }
-.pricing__content--pink {
+
+.package__head--pink {
   background-color: #f5276c;
 }
 
-.pricing__title {
+.package__type {
   margin: 0;
   font-family: "Poppins SemiBold";
   font-size: 2.5rem;
 }
-.pricing__price {
+.package__price {
   font-size: 2rem;
   margin: 0.6rem 0;
   font-family: "Poppins SemiBold";
 }
-.pricing__caption {
+.package__filter {
   margin: 0;
   font-size: 1.4rem;
 }
-.list-pricing {
+.package-options {
   font-size: 1.4rem;
-  margin: 2.5rem 0;
+  margin: 2rem 0;
 }
-.list-pricing__item {
+.package-options__item {
   display: flex;
   align-items: center;
   gap: 1rem;
   margin-bottom: 2rem;
 }
 
-.list-pricing__item:last-child {
+.package-options__item:last-child {
   margin-bottom: 0;
 }
 
-.list-pricing__icon {
+.package-options__icon {
 }
-.pricing__btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 3rem;
+.package__btn {
+  margin-bottom: 2.5rem;
 }
-.pricing__link {
+.package__link {
+  margin: 0 auto;
+}
+
+.app-btn--purple {
+  background-color: #803afb;
+  box-shadow: 0.1rem 1rem 3rem rgba(128, 58, 251, 24%);
+}
+
+.app-btn--pink {
+  background-color: #f5276c;
+  box-shadow: 0.1rem 1rem 3rem rgba(245, 39, 108, 24%);
 }
