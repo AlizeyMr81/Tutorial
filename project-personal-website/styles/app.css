@@ -194,7 +194,7 @@ body {
 .menu__item {
 }
 
-.menu__item-active {
+.menu__item--active {
   color: var(--primary-color);
 }
 
