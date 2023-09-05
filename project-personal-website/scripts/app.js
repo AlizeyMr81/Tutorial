@@ -1,15 +1,16 @@
 const navToggleIcon = document.querySelector(".nav__toggle-icon");
-const menuMobile = document.querySelector(".nav__mobile");
+const menu = document.querySelector(".menu");
 const cover = document.querySelector(".cover");
 const conditionItems = document.querySelectorAll(".condition__item");
 const portfolioListItems = document.querySelectorAll(".list-portfolio__item");
 const menuItems = document.querySelectorAll(".menu__item");
-
+const sections = document.querySelectorAll("main > section");
 navToggleIcon.addEventListener("click", function () {
   this.classList.toggle("nav__toggle-icon--open");
-  menuMobile.classList.toggle("nav__mobile--open");
+  menu.classList.toggle("menu--open");
   cover.classList.toggle("cover--show");
 });
+
 function navigationTabsInit(
   ListItems,
   ListItemActiveClass,
@@ -25,9 +26,10 @@ function navigationTabsInit(
     });
   });
 }
-function removeActiveClass(ClassName) {
-  document.querySelector(`.${ClassName}`).classList.remove(ClassName);
+function removeActiveClass(className) {
+  document.querySelector(`.${className}`).classList.remove(className)
 }
+
 navigationTabsInit(
   conditionItems,
   "condition__item--active",
@@ -39,20 +41,39 @@ navigationTabsInit(
   "portfolio-content--show"
 );
 
+const observer = new IntersectionObserver(observerHandler, {
+  threshold: 0.3,
+});
+function observerHandler(allSections) {
+  allSections.map((section) => {
+    let sectionClassName = section.target.className;
+    if (section.isIntersecting) {
+      document
+        .querySelector(`.menu__item[data-section=${sectionClassName}]`)
+        .classList.add("menu__item--active");
+    } else {
+      document
+        .querySelector(`.menu__item[data-section=${sectionClassName}]`)
+        .classList.remove("menu__item--active");
+    }
+  });
+}
 
+sections.forEach((section) => {
+  observer.observe(section);
+});
 
-menuItems.forEach(item => {
+menuItems.forEach((item) => {
   item.addEventListener("click", function (e) {
-    e.preventDefault()
-    removeActiveClass('menu__item--active')
-    item.classList.add("menu__item--active")
-    let sectionClass = item.getAttribute("data-section")
-    let sectionOffsetTop = document.querySelector(`.${sectionClass}`).offsetTop
-
+    e.preventDefault();
+    removeActiveClass("menu__item--active");
+    item.classList.add("menu__item--active");
+    let sectionClass = item.getAttribute("data-section");
+    let sectionOffsetTop = document.querySelector(`.${sectionClass}`).offsetTop;
 
     window.scrollTo({
-      top:sectionOffsetTop -120,
-      behavior : "smooth"
-        })
-  })
-})
+      top: sectionOffsetTop - 120,
+      behavior: "smooth",
+    });
+  });
+});

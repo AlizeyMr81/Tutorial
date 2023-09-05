@@ -149,16 +149,6 @@ body {
 
 */
 
-/* 
-
-
-================
-  Desktop Menu
-================
-
-
-*/
-
 .header {
   height: 8rem;
   background-color: var(--section-bg-color);
@@ -210,16 +200,6 @@ body {
   color: var(--primary-color);
 }
 
-/* 
-
-
-================
-  Mobile Menu
-================
-
-
-*/
-
 .nav__toggle-icon {
   display: none;
   width: 5rem;
@@ -268,56 +248,7 @@ body {
   transform: translateY(1rem) rotate(45deg);
 }
 
-.nav__mobile {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  right: 0;
-  width: 100%;
-  height: 0;
-  overflow: hidden;
-  background-color: var(--section-bg-color);
-  transition: all 120ms ease-in;
-  z-index: 100;
-}
-.mobile-menu {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 2rem;
-}
-
-.mobile-menu:first-child {
-  margin-top: 2rem;
-}
-
-.mobile-menu:last-child {
-  margin-bottom: 2rem;
-}
-
-.nav__mobile--open {
-  height: 33rem;
-}
-
-.mobile-menu__item {
-}
-
-.mobile-menu__item--active {
-  color: var(--primary-color);
-}
-
-.mobile-menu__link {
-  color: inherit;
-  transition: color 150ms ease-in;
-}
-
-.mobile-menu__link:hover {
-  color: var(--primary-color);
-}
-
-/* 
+/*
 
 
 --Main

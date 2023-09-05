@@ -93,16 +93,28 @@
 }
 
 @media (max-width: 768px) {
+
   .menu {
-    display: none;
+    background-color: var(--section-bg-color);
+    position: absolute;
+    top: 100%;
+    flex-direction: column;
+    width: 100%;
+    right: 0;
+    left: 0;
+    align-items: center;
+    justify-content: center;
+    transition: all 100ms ease-in;
+    height: 0;
+    overflow: hidden;
+  }
+
+  .menu--open{
+    height: 33rem;
   }
 
   .nav__toggle-icon {
     display: flex;
-  }
-
-  .nav__mobile {
-    display: block;
   }
 
   .cover {
