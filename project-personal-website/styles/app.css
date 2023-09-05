@@ -110,7 +110,7 @@ a {
 }
 
 .skew-reset {
-  transform: skewY(6deg);
+  transform: translateZ(0) skewY(6deg);
 }
 
 .m-b {
@@ -194,15 +194,16 @@ body {
 .menu__item {
 }
 
+.menu__item-active {
+  color: var(--primary-color);
+}
+
 .menu__link {
-  color: var(--text-color);
+  color: inherit;
   font-family: "Poppins Medium";
   display: block;
   font-size: 1.4rem;
   transition: color 120ms ease-in;
-}
-.menu__link-active {
-  color: var(--primary-color);
 }
 
 .menu__link:hover {
@@ -303,13 +304,13 @@ body {
 .mobile-menu__item {
 }
 
-.mobile-menu__link {
-  color: var(--text-color);
-  transition: color 150ms ease-in;
+.mobile-menu__item--active {
+  color: var(--primary-color);
 }
 
-.mobile-menu__link--active {
-  color: var(--primary-color);
+.mobile-menu__link {
+  color: inherit;
+  transition: color 150ms ease-in;
 }
 
 .mobile-menu__link:hover {
@@ -542,7 +543,7 @@ body {
 .resume {
   margin-top: 8rem;
   box-shadow: 0 0 6rem rgba(19, 182, 255, 24%);
-  transform: skewY(-6deg);
+  transform: translateZ(0) skewY(-6deg);
   background-color: var(--section-bg-color);
   padding: 8rem 0;
 }
@@ -776,7 +777,7 @@ body {
 .pricing {
   margin-top: 8rem;
   box-shadow: 0 0 6rem rgba(19, 182, 255, 24%);
-  transform: skewY(-6deg);
+  transform: translateZ(0) skewY(-6deg);
   background-color: var(--section-bg-color);
   padding: 8rem 0 12rem 0;
 }
