@@ -88,12 +88,11 @@
   }
 
   .contact {
-   margin-right: auto;
+    margin-right: auto;
   }
 }
 
 @media (max-width: 768px) {
-
   .menu {
     background-color: var(--section-bg-color);
     position: absolute;
@@ -109,7 +108,7 @@
     overflow: hidden;
   }
 
-  .menu--open{
+  .menu--open {
     height: 33rem;
   }
 
