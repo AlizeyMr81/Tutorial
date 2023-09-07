@@ -1,0 +1,295 @@
+Index: project-Camping-Web/styles/responsive.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>@media (max-width: 350px) {\r\n  .header-content__caption {\r\n    max-width: 25rem;\r\n  }\r\n  .activites__title {\r\n    font-size: 1.8rem;\r\n  }\r\n\r\n  .newsletters__title {\r\n    max-width: 16rem;\r\n  }\r\n}\r\n\r\n@media (min-width: 576px) {\r\n}\r\n\r\n@media (min-width: 768px) {\r\n  .nav__btn {\r\n    display: none;\r\n  }\r\n\r\n  .nav-menu {\r\n    display: none;\r\n  }\r\n\r\n  .menu {\r\n    display: flex;\r\n    align-items: center;\r\n    justify-content: center;\r\n  }\r\n\r\n  .newsletters {\r\n    flex-wrap: nowrap;\r\n    gap: 2rem;\r\n    text-align: left;\r\n  }\r\n\r\n  .newsletters__img {\r\n    width: 30rem;\r\n    height: 25rem;\r\n  }\r\n}\r\n\r\n@media (min-width: 992px) {\r\n  .nav__links {\r\n    display: block;\r\n  }\r\n\r\n  .header-content__caption {\r\n    max-width: 42rem;\r\n  }\r\n\r\n  .newsletters {\r\n    flex-wrap: nowrap;\r\n    justify-content: space-around;\r\n    gap: 0;\r\n  }\r\n\r\n  .newsletters__content {\r\n    width: 47rem;\r\n  }\r\n\r\n  .newsletters__caption {\r\n    margin: 0 0 1.5rem 0;\r\n  }\r\n\r\n}\r\n\r\n@media (min-width: 1200px) {\r\n}\r\n\r\n@media (min-width: 1400px) {\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/project-Camping-Web/styles/responsive.css b/project-Camping-Web/styles/responsive.css
+--- a/project-Camping-Web/styles/responsive.css	(revision 7ac1e91ee07df8a30e415c5b07f7ec2a8b40d18e)
++++ b/project-Camping-Web/styles/responsive.css	(date 1692516148286)
+@@ -12,6 +12,7 @@
+ }
+ 
+ @media (min-width: 576px) {
++
+ }
+ 
+ @media (min-width: 768px) {
+Index: project-Camping-Web/styles/app.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>:root {\r\n  --primary-color: #e76f51;\r\n  --secondary-color: #f8e1db;\r\n  --app-bg: #faf4f2;\r\n  --menu-color: #d2d2d2;\r\n  --white: #fff;\r\n  --dark: #3b3735;\r\n  --color--places-btn: #8d8d8d;\r\n  --primary-font: \"Roboto\", Arial, Helvetica, sans-serif;\r\n  --primary-font-md: \"Roboto Medium\", Arial, Helvetica, sans-serif;\r\n  --secondary-font: \"Archivo Black\", Arial, Helvetica, sans-serif;\r\n}\r\nhtml {\r\n  box-sizing: border-box;\r\n  font-size: 62.5%; /* 10px */\r\n}\r\n\r\n*,\r\n*::after,\r\n*::before {\r\n  box-sizing: inherit;\r\n}\r\n\r\nbody {\r\n  font-family: var(--primary-font);\r\n  line-height: 1.6;\r\n  font-size: 1.6rem;\r\n  background-color: var(--app-bg);\r\n}\r\n\r\n/* \r\n\r\nReset CSS\r\n\r\n*/\r\na {\r\n  text-decoration: none;\r\n}\r\n\r\n/* \r\n\r\nHelper Class\r\n\r\n*/\r\n.font-of-titles {\r\n  font-family: var(--secondary-font);\r\n}\r\n/* \r\n\r\ncomponent\r\n\r\n*/\r\n\r\n.btn {\r\n  border-radius: 10rem;\r\n  background-color: var(--dark);\r\n  color: var(--white);\r\n  width: 18rem;\r\n  height: 4.5rem;\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: center;\r\n  margin-right: auto;\r\n  margin-left: auto;\r\n  font-family: var(--primary-font-md);\r\n}\r\n\r\n/* \r\n\r\n-- App style --\r\n\r\n*/\r\n.header {\r\n  background: linear-gradient(rgba(59, 55, 53, 0.5), rgba(59, 55, 53, 0.5)),\r\n    url(\"../images/header-bg.jpg\");\r\n  background-size: cover;\r\n  background-repeat: no-repeat;\r\n  background-position: center;\r\n  min-height: 95vh;\r\n  border-bottom-left-radius: 7.5rem;\r\n  border-bottom-right-radius: 7.5rem;\r\n}\r\n.nav {\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: space-between;\r\n  padding: 3rem 0;\r\n}\r\n.nav__wrapper {\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: center;\r\n}\r\n\r\n/* \r\n\r\n===============\r\n    App Logo\r\n===============\r\n\r\n*/\r\n.app-logo {\r\n  display: block;\r\n  width: 5.5rem;\r\n  height: 5.5rem;\r\n}\r\n.app-logo__img {\r\n  width: 100%;\r\n  height: 100%;\r\n}\r\n/* \r\n\r\n=================\r\n    Main Menu\r\n=================\r\n\r\n*/\r\n.menu {\r\n  display: none;\r\n}\r\n\r\n.menu__item {\r\n  margin-left: 2.5rem;\r\n}\r\n\r\n.menu__link {\r\n  color: var(--menu-color);\r\n  transition: color 100ms ease-in;\r\n}\r\n.menu__link:hover {\r\n  color: var(--white);\r\n}\r\n\r\n.menu__link--active {\r\n  position: relative;\r\n  z-index: 20;\r\n  color: var(--white);\r\n}\r\n\r\n.menu__link--active::before {\r\n  content: \"\";\r\n  background-color: var(--primary-color);\r\n  position: absolute;\r\n  top: 0.8rem;\r\n  right: 0;\r\n  left: 0;\r\n  margin: 0 auto;\r\n  width: 4rem;\r\n  height: 0.2rem;\r\n  border-radius: 10rem;\r\n  transform: rotate(45deg);\r\n  z-index: -1;\r\n}\r\n\r\n/* \r\n\r\n=======================\r\n    Navigation Menu\r\n=======================\r\n\r\n*/\r\n\r\n.nav-menu {\r\n  position: fixed;\r\n  top: 0;\r\n  left: -20rem;\r\n  bottom: 0;\r\n  background-color: var(--primary-color);\r\n  padding: 2.2rem 2rem;\r\n  width: 20rem;\r\n  transition: all 200ms ease-in-out;\r\n}\r\n\r\n.nav-manu__title {\r\n  font-family: var(--secondary-font);\r\n  color: var(--dark);\r\n}\r\n\r\nb {\r\n  background-color: var(--dark);\r\n  width: 13rem;\r\n  height: 0.4rem;\r\n  display: block;\r\n  margin: 0.6rem 0 2rem 0;\r\n  border-radius: 50rem;\r\n}\r\n\r\n.nav-menu--open {\r\n  left: 0;\r\n}\r\n\r\n/* \r\n\r\n==================\r\n    Mobile Menu\r\n==================\r\n\r\n*/\r\n\r\n.mobile-menu {\r\n}\r\n\r\n.mobile-menu__item {\r\n  margin-bottom: 1rem;\r\n}\r\n\r\n.mobile-menu__link {\r\n  color: var(--menu-color);\r\n}\r\n\r\n/* \r\n\r\n=================\r\n     Nav Menu\r\n=================\r\n\r\n*/\r\n\r\n.nav-menu__links {\r\n  display: flex;\r\n  justify-content: space-between;\r\n  align-items: center;\r\n}\r\n\r\n.nav-menu__link {\r\n  flex-grow: 1;\r\n  color: var(--menu-color);\r\n}\r\n\r\n.nav-menu__link--border {\r\n  border: 1px solid var(--white);\r\n  border-radius: 4.5rem;\r\n  padding: 0.5rem 1.5rem;\r\n  text-align: center;\r\n}\r\n\r\n/* \r\n\r\n===================\r\n    Header Links\r\n===================\r\n\r\n*/\r\n\r\n.nav__links {\r\n  display: none;\r\n}\r\n\r\n.nav__link {\r\n  color: var(--white);\r\n  font-family: var(--primary-font-md);\r\n  margin-left: 2rem;\r\n}\r\n\r\n.nav__link--border {\r\n  border: 0.1rem solid var(--menu-color);\r\n  padding: 1rem 2.5rem;\r\n  border-radius: 2rem;\r\n  transition: border-color 100ms ease-in, background-color 100ms ease-in;\r\n}\r\n.nav__link--changes:hover {\r\n  border-color: var(--white);\r\n  background-color: #37474fa7;\r\n}\r\n\r\n/* \r\n\r\n=============\r\n   Nav Btn\r\n=============\r\n\r\n*/\r\n\r\n.nav__btn {\r\n  background-color: var(--white);\r\n  width: 5rem;\r\n  height: 5rem;\r\n  border-radius: 42%;\r\n  cursor: pointer;\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: center;\r\n}\r\n\r\n.nav__btn-line {\r\n  display: block;\r\n  width: 2.5rem;\r\n  height: 0.3rem;\r\n  background-color: var(--primary-color);\r\n  border-radius: 0.2rem;\r\n  position: relative;\r\n  transition: all 200ms ease-in-out;\r\n}\r\n\r\n.nav__btn-line::after,\r\n.nav__btn-line::before {\r\n  content: \"\";\r\n  width: 2.5rem;\r\n  height: 0.3rem;\r\n  background-color: var(--primary-color);\r\n  border-radius: 0.2rem;\r\n  position: absolute;\r\n  transition: all 100ms ease-in-out;\r\n}\r\n\r\n.nav__btn-line::after {\r\n  top: 0.6rem;\r\n}\r\n\r\n.nav__btn-line::before {\r\n  bottom: 0.7rem;\r\n}\r\n\r\n.nav__btn--open .nav__btn-line {\r\n  background-color: transparent;\r\n}\r\n\r\n.nav__btn--open .nav__btn-line::before {\r\n  transform: rotate(45deg) translate(5px, 6px);\r\n}\r\n\r\n.nav__btn--open .nav__btn-line::after {\r\n  transform: rotate(-45deg) translate(3px, -4px);\r\n}\r\n\r\n/* \r\n\r\n======================\r\n    Header Content\r\n======================\r\n\r\n*/\r\n.header-content {\r\n  max-width: 45rem;\r\n  margin-right: auto;\r\n  margin-left: auto;\r\n  margin-top: 4rem;\r\n  text-align: center;\r\n  color: var(--white);\r\n}\r\n\r\n.header-content__title {\r\n  line-height: 1.5;\r\n  font-family: var(--secondary-font);\r\n  font-size: 4rem;\r\n  margin-bottom: 2.8rem;\r\n}\r\n\r\n.header-content__dot-title::after {\r\n  content: \"\";\r\n  background-color: var(--white);\r\n  height: 0.8rem;\r\n  width: 1rem;\r\n  display: inline-block;\r\n  border-radius: 1rem;\r\n  margin-left: 0.2rem;\r\n}\r\n\r\n.header-content__caption {\r\n  font-size: 1.5rem;\r\n  max-width: 30rem;\r\n  margin: 0 auto 1.8rem auto;\r\n}\r\n\r\n.header-content__link {\r\n  background-color: var(--primary-color);\r\n  font-size: 1.4rem;\r\n  letter-spacing: 0.1rem;\r\n}\r\n\r\n/* \r\n\r\n   -- main --\r\n\r\n*/\r\n\r\n.main {\r\n  text-align: center;\r\n  margin-top: -8rem;\r\n}\r\n\r\n/* \r\n\r\n===============\r\n    Features\r\n===============\r\n\r\n*/\r\n\r\n.features {\r\n  margin-top: -8rem;\r\n  display: flex;\r\n  flex-wrap: wrap;\r\n  align-items: center;\r\n  justify-content: center;\r\n  gap: 2rem;\r\n}\r\n\r\n.feature {\r\n  width: 24rem;\r\n  height: 26rem;\r\n  background-color: var(--white);\r\n  margin-bottom: 2rem;\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  justify-content: center;\r\n  text-align: center;\r\n  color: var(--dark);\r\n  border-radius: 2rem;\r\n  flex-grow: 1;\r\n}\r\n\r\n.feature__img {\r\n  display: block;\r\n}\r\n\r\n.feature__title {\r\n  font-family: var(--secondary-font);\r\n  margin-top: 1.5rem;\r\n}\r\n\r\n.feature__caption {\r\n  font-size: 1.3rem;\r\n  margin: 1rem auto 0 auto;\r\n  max-width: 23rem;\r\n}\r\n\r\n/* \r\n\r\n================\r\n   Activities\r\n================\r\n\r\n*/\r\n\r\n.activites {\r\n  margin: 6rem 0;\r\n  padding: 0 1rem;\r\n}\r\n.activites__content {\r\n  max-width: 24rem;\r\n  height: 20rem;\r\n  margin: 0 auto;\r\n}\r\n.activites__img {\r\n  width: 8rem;\r\n  height: 8rem;\r\n}\r\n.activites__title {\r\n  font-family: var(--secondary-font);\r\n  font-size: 2rem;\r\n  color: var(--dark);\r\n}\r\n.activites__btn {\r\n  background-color: var(--white);\r\n  color: var(--primary-color);\r\n  font-family: var(--primary-font-md);\r\n  border: 0.1rem solid var(--primary-color);\r\n  transition: all 100ms ease-in;\r\n}\r\n\r\n.activites__btn:hover {\r\n  background-color: var(--primary-color);\r\n  color: var(--app-bg);\r\n}\r\n\r\n/* \r\n\r\n==============\r\n    Places \r\n==============\r\n\r\n*/\r\n\r\n.places-wrapper {\r\n  display: flex;\r\n  flex-wrap: wrap;\r\n  gap: 2rem;\r\n}\r\n\r\n.place {\r\n  flex-grow: 1;\r\n  width: 23rem;\r\n  height: 35rem;\r\n  background-color: var(--white);\r\n  text-align: center;\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  justify-content: center;\r\n  margin: 0 auto 4rem auto;\r\n  border-radius: 2rem;\r\n}\r\n.activity__banner {\r\n  position: relative;\r\n  background-color: black;\r\n  border-radius: 2rem;\r\n  max-width: 25rem;\r\n  height: 15rem;\r\n}\r\n.activity__photo {\r\n  width: 100%;\r\n  height: 100%;\r\n  border-radius: 2rem;\r\n  display: block;\r\n  object-fit: cover;\r\n  opacity: 0.8;\r\n}\r\n\r\n.activity__like {\r\n  position: absolute;\r\n  top: 2rem;\r\n  right: 2rem;\r\n  background-color: var(--white);\r\n  display: block;\r\n  padding: 0.8rem 0.8rem;\r\n  border-radius: 1.5rem;\r\n  cursor: pointer;\r\n}\r\n.activity__price {\r\n  background-color: var(--white);\r\n  position: absolute;\r\n  top: 85%;\r\n  left: 0;\r\n  right: 0;\r\n  width: 12rem;\r\n  margin: 0 auto;\r\n  padding: 1rem 0;\r\n  border-radius: 1.5rem;\r\n  display: block;\r\n  color: var(--primary-color);\r\n  font-size: 1.4rem;\r\n}\r\n.activity__content {\r\n  margin-top: 2rem;\r\n  color: var(--dark);\r\n}\r\n.activity__title {\r\n  font-family: var(--secondary-font);\r\n}\r\n.activity__caption {\r\n  font-size: 1.4rem;\r\n  margin: 0.8rem 0 2rem 0;\r\n  max-width: 26rem;\r\n  color: var(--dark);\r\n}\r\n\r\n.activity__link {\r\n  color: var(--color--places-btn);\r\n  font-family: var(--primary-font-md);\r\n  background-color: rgba(141, 141, 141, 0.1);\r\n}\r\n\r\n/* \r\n\r\n================\r\n   Newsletters\r\n================\r\n\r\n*/\r\n\r\n.newsletters {\r\n  background-color: #f8e1db;\r\n  border-radius: 2rem;\r\n  text-align: center;\r\n  flex-wrap: wrap;\r\n  display: flex;\r\n  flex-direction: row-reverse;\r\n  align-items: center;\r\n  padding: 3rem 1rem;\r\n  margin: 6rem 0;\r\n}\r\n.newsletters__banner {\r\n \r\n}\r\n.newsletters__img {\r\n  width: 100%;\r\n  height: 100%;\r\n  display: block;\r\n}\r\n.newsletters__content {\r\n}\r\n.newsletters__title {\r\n  font-family: var(--secondary-font);\r\n  font-size: 2.8rem;\r\n  margin: 1.5rem auto 0 auto;\r\n  color: var(--dark);\r\n  line-height: 1.5;\r\n}\r\n.newsletters__caption {\r\n  font-size: 1.4rem;\r\n  margin: 1.5rem 0;\r\n  font-family: var(--primary-font-md);\r\n  color: var(--dark);\r\n}\r\n\r\n.newslatters__form {\r\n  background-color: var(--white);\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: space-between;\r\n  padding: 1.2rem;\r\n  border-radius: 2rem;\r\n  box-shadow: 0.2rem 0.2rem 2.5rem -1.8rem black;\r\n}\r\n\r\n.newsletters__email-icon {\r\n  stroke: var(--dark);\r\n  flex-shrink: 0;\r\n}\r\n\r\n.newsletters__input {\r\n  border: none;\r\n  outline: none;\r\n  width: 100%;\r\n  padding: 0 1rem;\r\n}\r\n\r\n.newsletters__btn {\r\n  flex-shrink: 0;\r\n  border: none;\r\n  outline: none;\r\n  background-color: var(--primary-color);\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: center;\r\n  width: 5rem;\r\n  height: 5rem;\r\n  border-radius: 2rem;\r\n  cursor: pointer;\r\n}\r\n\r\n/*\r\n\r\n==============\r\n    Footer\r\n==============\r\n\r\n*/\r\n\r\n.footer {\r\n  background-color: var(--secondary-color);\r\n  border-top-left-radius: 7rem;\r\n  border-top-right-radius: 7rem;\r\n  padding: 6rem 0;\r\n  text-align: left;\r\n  position: relative;\r\n}\r\n.footer__btn {\r\n  position: absolute;\r\n  top: -2.8rem;\r\n  left: 0;\r\n  right: 0;\r\n  background-color: var(--white);\r\n  text-align: center;\r\n  width: 5.5rem;\r\n  padding: 1.5rem 0 0.5rem 0;\r\n  margin: 0 auto;\r\n  border-radius: 2rem;\r\n  box-shadow: 0.2rem 0.2rem 2.5rem -1.8rem black;\r\n}\r\n.footer__wrapper {\r\n  display: flex;\r\n flex-direction: column;\r\n}\r\n.footer__description {\r\n  margin-bottom: 2rem;\r\n}\r\n.footer__title {\r\n  font-family: var(--secondary-font);\r\n  margin-bottom: 0.8rem;\r\n}\r\n.footer__caption {\r\n  font-size: 1.4rem;\r\n  color: var(--dark);\r\n\r\n}\r\n.footer__content {\r\n   display: flex;\r\n   margin-bottom: 2rem;\r\n}\r\n.footer__info-site {\r\n flex-grow: 1;\r\n}\r\n\r\n.footer__plan {\r\n flex-grow: 1;\r\n  margin-left: 1rem;\r\n}\r\n\r\n.footer__help {\r\n  margin-bottom: 2rem;\r\n}\r\n\r\n.footer__list {\r\n}\r\n.footer__item {\r\n}\r\n\r\n.footer__link {\r\n font-size: 1.4rem;\r\n  color: var(--dark);\r\n}\r\n\r\n.footer__download {\r\n  margin-bottom: 2rem;\r\n  max-width: 25rem;\r\n}\r\n.footer__app-download {\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: center;\r\n  width: 100%;\r\n  gap: 1rem;\r\n}\r\n\r\n.footer__app-img {\r\n  width: 100%;\r\n  height: 100%;\r\n}\r\n\r\n.footer__copyright {\r\n  font-size: 1.3rem;\r\n  color: var(--dark);\r\n  width: 16rem;\r\n  margin: 1.5rem auto 0 auto;\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/project-Camping-Web/styles/app.css b/project-Camping-Web/styles/app.css
+--- a/project-Camping-Web/styles/app.css	(revision 7ac1e91ee07df8a30e415c5b07f7ec2a8b40d18e)
++++ b/project-Camping-Web/styles/app.css	(date 1692517891517)
+@@ -13,6 +13,7 @@
+ html {
+   box-sizing: border-box;
+   font-size: 62.5%; /* 10px */
++  scroll-behavior: smooth;
+ }
+ 
+ *,
+@@ -633,39 +634,46 @@
+ 
+ /*
+ 
+-==============
+-    Footer
+-==============
++  --Footer--
+ 
+ */
+ 
+ .footer {
+   background-color: var(--secondary-color);
+-  border-top-left-radius: 7rem;
+-  border-top-right-radius: 7rem;
+-  padding: 6rem 0;
++  border-top-left-radius: 7.5rem;
++  border-top-right-radius: 7.5rem;
++  padding-bottom: 4rem;
+   text-align: left;
+-  position: relative;
++  color: var(--dark);
+ }
+-.footer__btn {
++
++.footer > .container {
++  padding-top: 8rem;
++}
++
++.footer__scroll-top {
+   position: absolute;
+-  top: -2.8rem;
++  top: -2.5rem;
++  right: 0;
+   left: 0;
+-  right: 0;
++  margin: 0 auto;
+   background-color: var(--white);
+-  text-align: center;
+-  width: 5.5rem;
+-  padding: 1.5rem 0 0.5rem 0;
+-  margin: 0 auto;
++  width: 5rem;
++  height: 5rem;
++  display: flex;
++  align-items: center;
++  justify-content: center;
+   border-radius: 2rem;
+   box-shadow: 0.2rem 0.2rem 2.5rem -1.8rem black;
+ }
++
+ .footer__wrapper {
+   display: flex;
+- flex-direction: column;
++  flex-direction: column;
+ }
+ .footer__description {
+   margin-bottom: 2rem;
++  flex-grow: 1;
+ }
+ .footer__title {
+   font-family: var(--secondary-font);
+@@ -673,41 +681,45 @@
+ }
+ .footer__caption {
+   font-size: 1.4rem;
+-  color: var(--dark);
+-
++  max-width: 55rem;
+ }
+-.footer__content {
++.footer-content {
+    display: flex;
+    margin-bottom: 2rem;
+ }
+-.footer__info-site {
+- flex-grow: 1;
++.footer-site-information {
++
+ }
+ 
+-.footer__plan {
+- flex-grow: 1;
++.footer-plan {
+   margin-left: 1rem;
+ }
+ 
+-.footer__help {
+-  margin-bottom: 2rem;
++.footer-supports {
++  margin-bottom: 1.6rem;
++  flex-grow: 1;
+ }
+ 
+-.footer__list {
++.footer-pages {
+ }
+-.footer__item {
++.footer-pages__item {
+ }
+ 
+-.footer__link {
+- font-size: 1.4rem;
++.footer-pages__link {
++  font-size: 1.4rem;
+   color: var(--dark);
+ }
+ 
+-.footer__download {
++.footer-pages__link:hover {
++  text-decoration: underline;
++}
++
++.app-download{
+   margin-bottom: 2rem;
+   max-width: 25rem;
++  flex-grow: 1;
+ }
+-.footer__app-download {
++.app-download__banner {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+@@ -715,14 +727,13 @@
+   gap: 1rem;
+ }
+ 
+-.footer__app-img {
++.app-download__img {
+   width: 100%;
+   height: 100%;
+ }
+ 
+ .footer__copyright {
+   font-size: 1.3rem;
+-  color: var(--dark);
+-  width: 16rem;
+-  margin: 1.5rem auto 0 auto;
++  margin: 1rem 0 0 0;
++  text-align: center;
+ }
+\ No newline at end of file
+Index: project-Camping-Web/styles/grid.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>.container {\r\n  width: 100%;\r\n  padding-right: 1.5rem;\r\n  padding-left: 1.5rem;\r\n  margin-right: auto;\r\n  margin-left: auto;\r\n}\r\n@media (min-width: 576px) {\r\n  .container {\r\n    width: 54rem;\r\n  }\r\n}\r\n\r\n@media (min-width: 768px) {\r\n  .container {\r\n    width: 72rem;\r\n  }\r\n}\r\n\r\n@media (min-width: 992px) {\r\n  .container {\r\n    width: 96rem;\r\n  }\r\n}\r\n\r\n@media (min-width: 1200px) {\r\n  .container {\r\n    width: 114rem;\r\n  }\r\n}\r\n\r\n@media (min-width: 1400px) {\r\n  .container {\r\n    width: 137rem;\r\n  }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/project-Camping-Web/styles/grid.css b/project-Camping-Web/styles/grid.css
+--- a/project-Camping-Web/styles/grid.css	(revision 7ac1e91ee07df8a30e415c5b07f7ec2a8b40d18e)
++++ b/project-Camping-Web/styles/grid.css	(date 1692517211552)
+@@ -4,6 +4,7 @@
+   padding-left: 1.5rem;
+   margin-right: auto;
+   margin-left: auto;
++  position: relative;
+ }
+ @media (min-width: 576px) {
+   .container {
+Index: project-Camping-Web/index.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\r\n<html lang=\"en\">\r\n  <head>\r\n    <meta charset=\"UTF-8\" />\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\r\n    <title>Camping Web</title>\r\n    <link rel=\"icon\" href=\"images/app-icon.png\" type=\"image/png\" />\r\n    <link rel=\"stylesheet\" href=\"styles/reset.css\" />\r\n    <link rel=\"stylesheet\" href=\"styles/fonts.css\" />\r\n    <link rel=\"stylesheet\" href=\"styles/grid.css\" />\r\n    <link rel=\"stylesheet\" href=\"styles/app.css\" />\r\n    <link rel=\"stylesheet\" href=\"styles/responsive.css\" />\r\n  </head>\r\n  <body>\r\n    <header id=\"header-site\" class=\"header\">\r\n      <div class=\"container\">\r\n        <nav class=\"nav\">\r\n          <div class=\"nav__wrapper\">\r\n            <a href=\"#\" class=\"app-logo\">\r\n              <img\r\n                class=\"app-logo__img\"\r\n                src=\"images/svgs/logo.svg\"\r\n                alt=\"icon\"\r\n              />\r\n            </a>\r\n            <ul class=\"menu\">\r\n              <li class=\"menu__item\">\r\n                <a href=\"#\" class=\"menu__link menu__link--active\">Home</a>\r\n              </li>\r\n              <li class=\"menu__item\">\r\n                <a href=\"#\" class=\"menu__link\">Destination</a>\r\n              </li>\r\n              <li class=\"menu__item\">\r\n                <a href=\"#\" class=\"menu__link\">Near me</a>\r\n              </li>\r\n              <li class=\"menu__item\">\r\n                <a href=\"#\" class=\"menu__link\">Events</a>\r\n              </li>\r\n              <li class=\"menu__item\">\r\n                <a href=\"#\" class=\"menu__link\">Blog</a>\r\n              </li>\r\n              <li class=\"menu__item\">\r\n                <a href=\"#\" class=\"menu__link\">Gallery</a>\r\n              </li>\r\n              <li class=\"menu__item\">\r\n                <a href=\"#\" class=\"menu__link\">About</a>\r\n              </li>\r\n              <li class=\"menu__item\">\r\n                <a href=\"#\" class=\"menu__link\">Contact us</a>\r\n              </li>\r\n            </ul>\r\n          </div>\r\n          <div class=\"nav__links\">\r\n            <a href=\"#\" class=\"nav__link\">Sign up</a>\r\n            <a href=\"#\" class=\"nav__link nav__link--border nav__link--changes\"\r\n              >Sign in</a\r\n            >\r\n          </div>\r\n          <div class=\"nav-menu\">\r\n            <h2 class=\"nav-manu__title\">Camping Web</h2>\r\n            <b></b>\r\n            <ul class=\"mobile-menu\">\r\n              <li class=\"mobile-menu__item\">\r\n                <a href=\"#\" class=\"mobile-menu__link\">Home</a>\r\n              </li>\r\n              <li class=\"mobile-menu__item\">\r\n                <a href=\"#\" class=\"mobile-menu__link\">Destination</a>\r\n              </li>\r\n              <li class=\"mobile-menu__item\">\r\n                <a href=\"#\" class=\"mobile-menu__link\">Near me</a>\r\n              </li>\r\n              <li class=\"mobile-menu__item\">\r\n                <a href=\"#\" class=\"mobile-menu__link\">Events</a>\r\n              </li>\r\n              <li class=\"mobile-menu__item\">\r\n                <a href=\"#\" class=\"mobile-menu__link\">Blog</a>\r\n              </li>\r\n              <li class=\"mobile-menu__item\">\r\n                <a href=\"#\" class=\"mobile-menu__link\">Gallery</a>\r\n              </li>\r\n              <li class=\"mobile-menu__item\">\r\n                <a href=\"#\" class=\"mobile-menu__link\">About</a>\r\n              </li>\r\n              <li class=\"mobile-menu__item\">\r\n                <a href=\"#\" class=\"mobile-menu__link\">Contact us</a>\r\n              </li>\r\n            </ul>\r\n            <div class=\"nav-menu__links\">\r\n              <a href=\"#\" class=\"nav-menu__link\">Sign up</a>\r\n              <a href=\"#\" class=\"nav-menu__link nav-menu__link--border\"\r\n                >Sign in</a\r\n              >\r\n            </div>\r\n          </div>\r\n          <div class=\"nav__btn\">\r\n            <span class=\"nav__btn-line\"></span>\r\n          </div>\r\n        </nav>\r\n        <section class=\"header-content\">\r\n          <h1 class=\"header-content__title\">\r\n            Find Yourself Outside<span class=\"header-content__dot-title\"></span>\r\n          </h1>\r\n          <p class=\"header-content__caption\">\r\n            Book unique camping experiences on over 300,000 campsites, cabins,\r\n            RV parks, public parks and more.\r\n          </p>\r\n          <a href=\"#\" class=\"header-content__link btn\">Discover</a>\r\n        </section>\r\n      </div>\r\n    </header>\r\n    <main class=\"main\">\r\n      <div class=\"container\">\r\n        <section class=\"features\">\r\n          <div class=\"feature\">\r\n            <img class=\"feature__img\" src=\"images/svgs/fire.svg\" alt=\"fire\" />\r\n            <h2 class=\"feature__title\">Camping & Day Use</h2>\r\n            <p class=\"feature__caption\">\r\n              Return to your favorite spot or discover a new one that’s right\r\n              for you.\r\n            </p>\r\n          </div>\r\n          <div class=\"feature\">\r\n            <img\r\n              class=\"feature__img\"\r\n              src=\"images/svgs/tickets.svg\"\r\n              alt=\"tickets\"\r\n            />\r\n            <h2 class=\"feature__title\">Tours & Tickets</h2>\r\n            <p class=\"feature__caption\">\r\n              Reserve tours and tickets to participate in events.\r\n            </p>\r\n          </div>\r\n          <div class=\"feature\">\r\n            <img class=\"feature__img\" src=\"images/svgs/paper.svg\" alt=\"paper\" />\r\n            <h2 class=\"feature__title\">Permits</h2>\r\n            <p class=\"feature__caption\">\r\n              Obtain permits for access to high-demand locations.\r\n            </p>\r\n          </div>\r\n          <div class=\"feature\">\r\n            <img class=\"feature__img\" src=\"images/svgs/fish.svg\" alt=\"fish\" />\r\n            <h2 class=\"feature__title\">Recreation Activities</h2>\r\n            <p class=\"feature__caption\">\r\n              Find the best spots for hunting, fishing & recreational shooting.\r\n            </p>\r\n          </div>\r\n        </section>\r\n        <section class=\"activites\">\r\n          <div class=\"activites__content\">\r\n            <img\r\n              class=\"activites__img\"\r\n              src=\"images/svgs/destination.svg\"\r\n              alt=\"destination\"\r\n            />\r\n            <h2 class=\"activites__title\">Explore Destinations & Activities</h2>\r\n          </div>\r\n          <div class=\"places-wrapper\">\r\n            <div class=\"place\">\r\n              <div class=\"activity__banner\">\r\n                <img\r\n                  src=\"images/image1.jpg\"\r\n                  alt=\"image 1\"\r\n                  class=\"activity__photo\"\r\n                />\r\n                <img\r\n                  class=\"activity__like\"\r\n                  src=\"images/svg-icons/Path 955.svg\"\r\n                  alt=\"heart\"\r\n                />\r\n                <span class=\"activity__price\">$36/night</span>\r\n              </div>\r\n              <div class=\"activity__content\">\r\n                <h2 class=\"activity__title\">Trickle Creek Ranch</h2>\r\n                <p class=\"activity__caption\">\r\n                  Book unique camping experiences on over 300,000 campsites.\r\n                </p>\r\n                <a href=\"#\" class=\"activity__link btn\">Read More</a>\r\n              </div>\r\n            </div>\r\n            <div class=\"place\">\r\n              <div class=\"activity__banner\">\r\n                <img\r\n                  src=\"images/image2.jpg\"\r\n                  alt=\"image 2\"\r\n                  class=\"activity__photo\"\r\n                />\r\n                <img\r\n                  class=\"activity__like\"\r\n                  src=\"images/svg-icons/heart.svg\"\r\n                  alt=\"heart\"\r\n                />\r\n                <span class=\"activity__price\">$36/night</span>\r\n              </div>\r\n              <div class=\"activity__content\">\r\n                <h2 class=\"activity__title\">Dragonfly Tiny Cabin</h2>\r\n                <p class=\"activity__caption\">\r\n                  Book unique camping experiences on over 300,000 campsites.\r\n                </p>\r\n                <a href=\"#\" class=\"activity__link btn\">Read More</a>\r\n              </div>\r\n            </div>\r\n            <div class=\"place\">\r\n              <div class=\"activity__banner\">\r\n                <img\r\n                  src=\"images/image3.jpg\"\r\n                  alt=\"image 3\"\r\n                  class=\"activity__photo\"\r\n                />\r\n                <img\r\n                  class=\"activity__like\"\r\n                  src=\"images/svg-icons/Path 955.svg\"\r\n                  alt=\"heart\"\r\n                />\r\n                <span class=\"activity__price\">$36/night</span>\r\n              </div>\r\n              <div class=\"activity__content\">\r\n                <h2 class=\"activity__title\">Tiny Cabin in the mountains</h2>\r\n                <p class=\"activity__caption\">\r\n                  Book unique camping experiences on over 300,000 campsites.\r\n                </p>\r\n                <a href=\"#\" class=\"activity__link btn\">Read More</a>\r\n              </div>\r\n            </div>\r\n            <div class=\"place\">\r\n              <div class=\"activity__banner\">\r\n                <img\r\n                  src=\"images/image4.jpg\"\r\n                  alt=\"image 4\"\r\n                  class=\"activity__photo\"\r\n                />\r\n                <img\r\n                  class=\"activity__like\"\r\n                  src=\"images/svg-icons/Path 955.svg\"\r\n                  alt=\"heart\"\r\n                />\r\n                <span class=\"activity__price\">$36/night</span>\r\n              </div>\r\n              <div class=\"activity__content\">\r\n                <h2 class=\"activity__title\">The Stuga</h2>\r\n                <p class=\"activity__caption\">\r\n                  Book unique camping experiences on over 300,000 campsites.\r\n                </p>\r\n                <a href=\"#\" class=\"activity__link btn\">Read More</a>\r\n              </div>\r\n            </div>\r\n            <div class=\"place\">\r\n              <div class=\"activity__banner\">\r\n                <img\r\n                  src=\"images/image5.jpg\"\r\n                  alt=\"image 5\"\r\n                  class=\"activity__photo\"\r\n                />\r\n                <img\r\n                  class=\"activity__like\"\r\n                  src=\"images/svg-icons/Path 955.svg\"\r\n                  alt=\"heart\"\r\n                />\r\n                <span class=\"activity__price\">$36/night</span>\r\n              </div>\r\n              <div class=\"activity__content\">\r\n                <h2 class=\"activity__title\">Trickle Creek Ranch</h2>\r\n                <p class=\"activity__caption\">\r\n                  Book unique camping experiences on over 300,000 campsites.\r\n                </p>\r\n                <a href=\"#\" class=\"activity__link btn\">Read More</a>\r\n              </div>\r\n            </div>\r\n            <div class=\"place\">\r\n              <div class=\"activity__banner\">\r\n                <img\r\n                  src=\"images/image6.jpg\"\r\n                  alt=\"image 6\"\r\n                  class=\"activity__photo\"\r\n                />\r\n                <img\r\n                  class=\"activity__like\"\r\n                  src=\"images/svg-icons/Path 955.svg\"\r\n                  alt=\"heart\"\r\n                />\r\n                <span class=\"activity__price\">$36/night</span>\r\n              </div>\r\n              <div class=\"activity__content\">\r\n                <h2 class=\"activity__title\">Trickle Creek Ranch</h2>\r\n                <p class=\"activity__caption\">\r\n                  Book unique camping experiences on over 300,000 campsites.\r\n                </p>\r\n                <a href=\"#\" class=\"activity__link btn\">Read More</a>\r\n              </div>\r\n            </div>\r\n            <div class=\"place\">\r\n              <div class=\"activity__banner\">\r\n                <img\r\n                  src=\"images/image7.jpg\"\r\n                  alt=\"image 7\"\r\n                  class=\"activity__photo\"\r\n                />\r\n                <img\r\n                  class=\"activity__like\"\r\n                  src=\"images/svg-icons/heart.svg\"\r\n                  alt=\"heart\"\r\n                />\r\n                <span class=\"activity__price\">$36/night</span>\r\n              </div>\r\n              <div class=\"activity__content\">\r\n                <h2 class=\"activity__title\">Trickle Creek Ranch</h2>\r\n                <p class=\"activity__caption\">\r\n                  Book unique camping experiences on over 300,000 campsites.\r\n                </p>\r\n                <a href=\"#\" class=\"activity__link btn\">Read More</a>\r\n              </div>\r\n            </div>\r\n            <div class=\"place\">\r\n              <div class=\"activity__banner\">\r\n                <img\r\n                  src=\"images/image8.jpg\"\r\n                  alt=\"image 8\"\r\n                  class=\"activity__photo\"\r\n                />\r\n                <img\r\n                  src=\"images/svg-icons/Path 955.svg\"\r\n                  alt=\"heart\"\r\n                  class=\"activity__like\"\r\n                />\r\n                <span class=\"activity__price\">$36/night</span>\r\n              </div>\r\n              <div class=\"activity__content\">\r\n                <h2 class=\"activity__title\">Trickle Creek Ranch</h2>\r\n                <p class=\"activity__caption\">\r\n                  Book unique camping experiences on over 300,000 campsites.\r\n                </p>\r\n                <a href=\"#\" class=\"activity__link btn\">Read More</a>\r\n              </div>\r\n            </div>\r\n            <div class=\"place\">\r\n              <div class=\"activity__banner\">\r\n                <img\r\n                  src=\"images/image9.jpg\"\r\n                  alt=\"image 9\"\r\n                  class=\"activity__photo\"\r\n                />\r\n                <img\r\n                  class=\"activity__like\"\r\n                  src=\"images/svg-icons/Path 955.svg\"\r\n                  alt=\"heart\"\r\n                />\r\n                <span class=\"activity__price\">$36/night</span>\r\n              </div>\r\n              <div class=\"activity__content\">\r\n                <h2 class=\"activity__title\">Trickle Creek Ranch</h2>\r\n                <p class=\"activity__caption\">\r\n                  Book unique camping experiences on over 300,000 campsites.\r\n                </p>\r\n                <a href=\"#\" class=\"activity__link btn\">Read More</a>\r\n              </div>\r\n            </div>\r\n            <div class=\"place\">\r\n              <div class=\"activity__banner\">\r\n                <img\r\n                  src=\"images/image10.jpg\"\r\n                  alt=\"image 10\"\r\n                  class=\"activity__photo\"\r\n                />\r\n                <img\r\n                  class=\"activity__like\"\r\n                  src=\"images/svg-icons/Path 955.svg\"\r\n                  alt=\"heart\"\r\n                />\r\n                <span class=\"activity__price\">$36/night</span>\r\n              </div>\r\n              <div class=\"activity__content\">\r\n                <h2 class=\"activity__title\">Trickle Creek Ranch</h2>\r\n                <p class=\"activity__caption\">\r\n                  Book unique camping experiences on over 300,000 campsites.\r\n                </p>\r\n                <a href=\"#\" class=\"activity__link btn\">Read More</a>\r\n              </div>\r\n            </div>\r\n            <div class=\"place\">\r\n              <div class=\"activity__banner\">\r\n                <img\r\n                  src=\"images/image11.jpg\"\r\n                  alt=\"image 11\"\r\n                  class=\"activity__photo\"\r\n                />\r\n\r\n                <img\r\n                  class=\"activity__like\"\r\n                  src=\"images/svg-icons/Path 955.svg\"\r\n                  alt=\"heart\"\r\n                />\r\n                <span class=\"activity__price\">$36/night</span>\r\n              </div>\r\n              <div class=\"activity__content\">\r\n                <h2 class=\"activity__title\">Trickle Creek Ranch</h2>\r\n                <p class=\"activity__caption\">\r\n                  Book unique camping experiences on over 300,000 campsites.\r\n                </p>\r\n                <a href=\"#\" class=\"activity__link btn\">Read More</a>\r\n              </div>\r\n            </div>\r\n            <div class=\"place\">\r\n              <div class=\"activity__banner\">\r\n                <img\r\n                  src=\"images/image12.jpg\"\r\n                  alt=\"image 12\"\r\n                  class=\"activity__photo\"\r\n                />\r\n                <img\r\n                  class=\"activity__like\"\r\n                  src=\"images/svg-icons/heart.svg\"\r\n                  alt=\"heart\"\r\n                />\r\n                <span class=\"activity__price\">$36/night</span>\r\n              </div>\r\n              <div class=\"activity__content\">\r\n                <h2 class=\"activity__title\">Trickle Creek Ranch</h2>\r\n                <p class=\"activity__caption\">\r\n                  Book unique camping experiences on over 300,000 campsites.\r\n                </p>\r\n                <a href=\"#\" class=\"activity__link btn\">Read More</a>\r\n              </div>\r\n            </div>\r\n          </div>\r\n\r\n          <a href=\"#\" class=\"activites__btn btn\">View all</a>\r\n        </section>\r\n        <section class=\"newsletters\">\r\n          <div class=\"newsletters__banner\">\r\n            <img class=\"newsletters__img\" src=\"images/tent.png\" alt=\"tent\" />\r\n          </div>\r\n          <div class=\"newsletters__content\">\r\n            <h2 class=\"newsletters__title\">Let's Stay in Touch</h2>\r\n            <p class=\"newsletters__caption\">\r\n              Get travel planning ideas, helpful tips, and stories from our\r\n              visitors delivered right to your inbox.\r\n            </p>\r\n            <div class=\"newsletters__form-box\">\r\n              <form class=\"newslatters__form\">\r\n                <svg\r\n                  class=\"newsletters__email-icon\"\r\n                  xmlns=\"http://www.w3.org/2000/svg\"\r\n                  width=\"24.242\"\r\n                  height=\"17.746\"\r\n                  viewBox=\"0 0 24.242 17.746\"\r\n                >\r\n                  <path\r\n                    id=\"Path_908\"\r\n                    data-name=\"Path 908\"\r\n                    d=\"M26.215,17.058H8.027A3.03,3.03,0,0,0,5,20.085V31.777A3.031,3.031,0,0,0,8.027,34.8H26.215a3.031,3.031,0,0,0,3.027-3.027V20.085A3.03,3.03,0,0,0,26.215,17.058Zm-18.188.857H26.215a2.168,2.168,0,0,1,1.829,1.007l-9.328,8.81a2.354,2.354,0,0,1-3.189,0L6.2,18.923A2.169,2.169,0,0,1,8.027,17.915ZM5.878,32.062a2.207,2.207,0,0,1-.021-.285V20.085a2.163,2.163,0,0,1,.021-.285l6.491,6.131Zm20.337,1.885H8.027A2.168,2.168,0,0,1,6.2,32.94l6.8-6.419,1.944,1.835a3.22,3.22,0,0,0,4.366,0l1.943-1.835,6.8,6.418A2.167,2.167,0,0,1,26.215,33.947Zm2.169-13.862V31.777a2.2,2.2,0,0,1-.021.285l-6.491-6.131L28.364,19.8A2.251,2.251,0,0,1,28.384,20.085Z\"\r\n                    transform=\"translate(-5 -17.058)\"\r\n                    fill=\"#8d8d8d\"\r\n                  />\r\n                </svg>\r\n                <input\r\n                  class=\"newsletters__input\"\r\n                  type=\"email\"\r\n                  placeholder=\"Email Address\"\r\n                />\r\n                <button class=\"newsletters__btn\" type=\"submit\">\r\n                  <svg\r\n                    xmlns=\"http://www.w3.org/2000/svg\"\r\n                    width=\"24.162\"\r\n                    height=\"18.23\"\r\n                    viewBox=\"0 0 24.162 18.23\"\r\n                  >\r\n                    <path\r\n                      id=\"Path_909\"\r\n                      data-name=\"Path 909\"\r\n                      d=\"M9.778,15.82,6.954,17.7a.55.55,0,0,1-.816-.439V13.121l11.546-8.66L3.88,11.8.3,9.356A.748.748,0,0,1,.491,8.039L23.709-.37c.314-.126.565.251.377.565L13.606,17.514a.773.773,0,0,1-1.067.188Z\"\r\n                      transform=\"translate(0.012 0.395)\"\r\n                      fill=\"#fff\"\r\n                      fill-rule=\"evenodd\"\r\n                    />\r\n                  </svg>\r\n                </button>\r\n              </form>\r\n            </div>\r\n          </div>\r\n        </section>\r\n      </div>\r\n    </main>\r\n    <footer class=\"footer\">\r\n      <div class=\"footer__btn\">\r\n        <a href=\"#header-site\"><img src=\"images/svg-icons/flash.svg\" alt=\"flash\"></a>\r\n      </div>\r\n      <div class=\"container\">\r\n        <div class=\"footer__wrapper\" >\r\n          <div class=\"footer__description\" >\r\n            <h2 class=\"footer__title\" >Hipcamp is everywhere you\r\n              want to camp.</h2>\r\n            <p class=\"footer__caption\" >Discover unique experiences on ranches, nature preserves, farms, vineyards, and public campgrounds across the U.S. Book tent camping, treehouses, cabins, yurts, primitive backcountry sites, car camping, airstreams, tiny houses, RV camping, glamping tents and more.</p>\r\n          </div>\r\n          <div class=\"footer__content\">\r\n            <div class=\"footer__info-site\" >\r\n              <h2 class=\"footer__title\" >Get to Know Us</h2>\r\n              <ul class=\"footer__list\">\r\n                <li class=\"footer__item\" ><a href=\"#\" class=\"footer__link\" >About Us</a></li>\r\n                <li class=\"footer__item\" ><a href=\"#\" class=\"footer__link\" >Rules & Reservation </a></li>\r\n                <li class=\"footer__item\" ><a href=\"#\" class=\"footer__link\" >Policies</a></li>\r\n                <li class=\"footer__item\" ><a href=\"#\" class=\"footer__link\" >Accessibility</a></li>\r\n                <li class=\"footer__item\" ><a href=\"#\" class=\"footer__link\" >Media Center</a></li>\r\n              </ul>\r\n            </div>\r\n            <div class=\"footer__plan\">\r\n              <h2 class=\"footer__title\" >Plan with Us</h2>\r\n              <ul class=\"footer__list\">\r\n                <li class=\"footer__item\" ><a href=\"#\" class=\"footer__link\" >Find Trip Inspiration</a></li>\r\n                <li class=\"footer__item\" ><a href=\"#\" class=\"footer__link\" >Build a Trip </a></li>\r\n                <li class=\"footer__item\" ><a href=\"#\" class=\"footer__link\" >Buy a Pass</a></li>\r\n                <li class=\"footer__item\" ><a href=\"#\" class=\"footer__link\" >Enter a Lottery</a></li>\r\n              </ul>\r\n            </div>\r\n          </div>\r\n          <div class=\"footer__help\">\r\n            <h2 class=\"footer__title\">Let Us Help You</h2>\r\n            <ul class=\"footer__list\">\r\n              <li class=\"footer__item\" ><a href=\"#\" class=\"footer__link\" >Your Account</a></li>\r\n              <li class=\"footer__item\" ><a href=\"#\" class=\"footer__link\" >Your Reservations </a></li>\r\n              <li class=\"footer__item\" ><a href=\"#\" class=\"footer__link\" >Contact Us</a></li>\r\n              <li class=\"footer__item\" ><a href=\"#\" class=\"footer__link\" >Help Center</a></li>\r\n              <li class=\"footer__item\" ><a href=\"#\" class=\"footer__link\" >Submit Feedback</a></li>\r\n            </ul>\r\n          </div>\r\n          <div class=\"footer__download\">\r\n            <h2 class=\"footer__title\" >Download Our App</h2>\r\n            <div class=\"footer__app-download\">\r\n              <a href=\"#\"><img class=\"footer__app-img\" src=\"images/app-store-apple.jpg\"></a>\r\n              <a href=\"#\"><img class=\"footer__app-img\" src=\"images/google-play.jpg\"></a>\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n      <p class=\"footer__copyright\" >© 2020. All rights reserved.</p>\r\n    </footer>\r\n    <script src=\"scripts/app.js\"></script>\r\n  </body>\r\n</html>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/project-Camping-Web/index.html b/project-Camping-Web/index.html
+--- a/project-Camping-Web/index.html	(revision 7ac1e91ee07df8a30e415c5b07f7ec2a8b40d18e)
++++ b/project-Camping-Web/index.html	(date 1692517671391)
+@@ -480,57 +480,59 @@
+       </div>
+     </main>
+     <footer class="footer">
+-      <div class="footer__btn">
+-        <a href="#header-site"><img src="images/svg-icons/flash.svg" alt="flash"></a>
+-      </div>
+       <div class="container">
++          <a class="footer__scroll-top" href="#header-site">
++            <svg xmlns="http://www.w3.org/2000/svg" width="18.68" height="22.175" viewBox="0 0 18.68 22.175">
++              <path id="Path_958" data-name="Path 958" d="M22.175,9.358a1.43,1.43,0,0,0-1.43-1.43H5.063l5.813-5.42A1.43,1.43,0,1,0,8.923.421L.455,8.311a1.43,1.43,0,0,0,0,2.091L8.923,18.3A1.43,1.43,0,1,0,10.875,16.2L5.063,10.788H20.746A1.43,1.43,0,0,0,22.175,9.358Z" transform="translate(18.68) rotate(90)" fill="#e76f51"/>
++            </svg>
++          </a>
+         <div class="footer__wrapper" >
+           <div class="footer__description" >
+             <h2 class="footer__title" >Hipcamp is everywhere you
+               want to camp.</h2>
+             <p class="footer__caption" >Discover unique experiences on ranches, nature preserves, farms, vineyards, and public campgrounds across the U.S. Book tent camping, treehouses, cabins, yurts, primitive backcountry sites, car camping, airstreams, tiny houses, RV camping, glamping tents and more.</p>
+           </div>
+-          <div class="footer__content">
+-            <div class="footer__info-site" >
++          <div class="footer-content">
++            <div class="footer-site-information" >
+               <h2 class="footer__title" >Get to Know Us</h2>
+-              <ul class="footer__list">
+-                <li class="footer__item" ><a href="#" class="footer__link" >About Us</a></li>
+-                <li class="footer__item" ><a href="#" class="footer__link" >Rules & Reservation </a></li>
+-                <li class="footer__item" ><a href="#" class="footer__link" >Policies</a></li>
+-                <li class="footer__item" ><a href="#" class="footer__link" >Accessibility</a></li>
+-                <li class="footer__item" ><a href="#" class="footer__link" >Media Center</a></li>
++              <ul class="footer-pages">
++                <li class="footer-pages__item" ><a href="#" class="footer-pages__link" >About Us</a></li>
++                <li class="footer-pages__item" ><a href="#" class="footer-pages__link" >Rules & Reservation Policies </a></li>
++                <li class="footer-pages__item" ><a href="#" class="footer-pages__link" >Accessibility</a></li>
++                <li class="footer-pages__item" ><a href="#" class="footer-pages__link" >Media Center</a></li>
+               </ul>
+             </div>
+-            <div class="footer__plan">
++            <div class="footer-plan">
+               <h2 class="footer__title" >Plan with Us</h2>
+-              <ul class="footer__list">
+-                <li class="footer__item" ><a href="#" class="footer__link" >Find Trip Inspiration</a></li>
+-                <li class="footer__item" ><a href="#" class="footer__link" >Build a Trip </a></li>
+-                <li class="footer__item" ><a href="#" class="footer__link" >Buy a Pass</a></li>
+-                <li class="footer__item" ><a href="#" class="footer__link" >Enter a Lottery</a></li>
++              <ul class="footer-pages">
++                <li class="footer-pages__item" ><a href="#" class="footer-pages__link" >Find Trip Inspiration</a></li>
++                <li class="footer-pages__item" ><a href="#" class="footer-pages__link" >Build a Trip </a></li>
++                <li class="footer-pages__item" ><a href="#" class="footer-pages__link" >Buy a Pass</a></li>
++                <li class="footer-pages__item" ><a href="#" class="footer-pages__link" >Enter a Lottery</a></li>
+               </ul>
+             </div>
+           </div>
+-          <div class="footer__help">
++          <div class="footer-supports">
+             <h2 class="footer__title">Let Us Help You</h2>
+-            <ul class="footer__list">
+-              <li class="footer__item" ><a href="#" class="footer__link" >Your Account</a></li>
+-              <li class="footer__item" ><a href="#" class="footer__link" >Your Reservations </a></li>
+-              <li class="footer__item" ><a href="#" class="footer__link" >Contact Us</a></li>
+-              <li class="footer__item" ><a href="#" class="footer__link" >Help Center</a></li>
+-              <li class="footer__item" ><a href="#" class="footer__link" >Submit Feedback</a></li>
++            <ul class="footer-pages">
++              <li class="footer-pages__item" ><a href="#" class="footer-pages__link" >Your Account</a></li>
++              <li class="footer-pages__item" ><a href="#" class="footer-pages__link" >Your Reservations </a></li>
++              <li class="footer-pages__item" ><a href="#" class="footer-pages__link" >Contact Us</a></li>
++              <li class="footer-pages__item" ><a href="#" class="footer-pages__link" >Help Center</a></li>
++              <li class="footer-pages__item" ><a href="#" class="footer-pages__link" >Submit Feedback</a></li>
+             </ul>
+           </div>
+-          <div class="footer__download">
++          <div class="app-download">
+             <h2 class="footer__title" >Download Our App</h2>
+-            <div class="footer__app-download">
+-              <a href="#"><img class="footer__app-img" src="images/app-store-apple.jpg"></a>
+-              <a href="#"><img class="footer__app-img" src="images/google-play.jpg"></a>
++            <div class="app-download__banner">
++              <a href="#"><img class="app-download__img" src="images/app-store-apple.jpg"></a>
++              <a href="#"><img class="app-download__img" src="images/google-play.jpg"></a>
+             </div>
+           </div>
+         </div>
++        <p class="footer__copyright" >© 2020. All rights reserved.</p>
+       </div>
+-      <p class="footer__copyright" >© 2020. All rights reserved.</p>
++
+     </footer>
+     <script src="scripts/app.js"></script>
+   </body>

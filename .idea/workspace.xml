@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b7f2d10c-f9e4-4da9-8744-1352b38d3fea" name="Changes" comment="portfolio section of main finished" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="Glory-Edit" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;AlizeyMr81&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="d02a7ed5-10d4-43e9-a92d-e0c0e25a8e60" />
+        <option name="url" value="https://github.com/AlizeyMr81/Tutorial.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/project-Camping-Web/index.html" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/project-Camping-Web/styles/app.css" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/project-Camping-Web/styles/responsive.css" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2UBi9tDTB85aX36DVJ6QDRNSSh2" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Glory-Edit&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/Tutorial&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b7f2d10c-f9e4-4da9-8744-1352b38d3fea" name="Changes" comment="" />
+      <created>1692419230065</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1692419230065</updated>
+      <workItem from="1692419231674" duration="1324000" />
+      <workItem from="1692445604823" duration="6833000" />
+      <workItem from="1692462280510" duration="11239000" />
+      <workItem from="1692506614119" duration="11739000" />
+      <workItem from="1692519747688" duration="353000" />
+      <workItem from="1692532709903" duration="16887000" />
+      <workItem from="1692553382628" duration="41000" />
+      <workItem from="1692591572593" duration="2460000" />
+      <workItem from="1692594140559" duration="1298000" />
+      <workItem from="1692595493736" duration="2146000" />
+      <workItem from="1692597696294" duration="210000" />
+      <workItem from="1692598066024" duration="68000" />
+      <workItem from="1692598164768" duration="117000" />
+      <workItem from="1692598312941" duration="9265000" />
+      <workItem from="1692618320437" duration="63000" />
+      <workItem from="1692621537797" duration="7295000" />
+      <workItem from="1692630166853" duration="3131000" />
+      <workItem from="1692679859275" duration="110000" />
+      <workItem from="1692792630205" duration="1197000" />
+      <workItem from="1692794562503" duration="1000" />
+      <workItem from="1693759855780" duration="3277000" />
+      <workItem from="1693917453480" duration="15663000" />
+    </task>
+    <task id="LOCAL-00001" summary="basic structure of footer completed">
+      <option name="closed" value="true" />
+      <created>1692519431179</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1692519431179</updated>
+    </task>
+    <task id="LOCAL-00002" summary="add shape3 in newsletters section">
+      <option name="closed" value="true" />
+      <created>1692548410062</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1692548410062</updated>
+    </task>
+    <task id="LOCAL-00003" summary="add shape1 and shape2 in activities section">
+      <option name="closed" value="true" />
+      <created>1692551667493</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1692551667493</updated>
+    </task>
+    <task id="LOCAL-00004" summary="added box shadow propery to project">
+      <option name="closed" value="true" />
+      <created>1692553290915</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1692553290915</updated>
+    </task>
+    <task id="LOCAL-00005" summary="all project codes refactor">
+      <option name="closed" value="true" />
+      <created>1692626108930</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1692626108930</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Project one finished">
+      <option name="closed" value="true" />
+      <created>1692636123366</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1692636123366</updated>
+    </task>
+    <task id="LOCAL-00007" summary="portfolio section of main finished">
+      <option name="closed" value="true" />
+      <created>1693763201023</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1693763201023</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="app css updated and added footer" />
+    <MESSAGE value="basic structure of footer completed" />
+    <MESSAGE value="add shape3 in newsletters section" />
+    <MESSAGE value="add shape1 and shape2 in activities section" />
+    <MESSAGE value="added box shadow propery to project" />
+    <MESSAGE value="all project codes refactor" />
+    <MESSAGE value="Project one finished" />
+    <MESSAGE value="portfolio section of main finished" />
+    <option name="LAST_COMMIT_MESSAGE" value="portfolio section of main finished" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
