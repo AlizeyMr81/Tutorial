@@ -1,0 +1,75 @@
+@media screen and (max-width: 999px) {
+  .nav__content,
+  .nav__icon-wrapper {
+    gap: 1rem;
+  }
+  .menu {
+    gap: 2rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (max-width: 768px) {
+  .menu {
+    flex-direction: column;
+    position: fixed;
+    background-color: #fff;
+    top: 0;
+    left: -15rem;
+    bottom: 0;
+    gap: 5rem;
+    padding: 3rem 3rem 0 3rem;
+    align-items: flex-start;
+    transition: all 120ms ease-in;
+  }
+
+  .menu--open {
+    left: 0;
+  }
+
+  .nav__toggle-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  .nav__toggle-line {
+    position: relative;
+  }
+  .nav__toggle-line,
+  .nav__toggle-line::after,
+  .nav__toggle-line::before {
+    content: "";
+    border-radius: 50rem;
+    width: 2.6rem;
+    height: 0.3rem;
+    background-color: black;
+    transition: all 150ms ease-in;
+  }
+
+  .nav__toggle-line::before {
+    top: 0.8rem;
+    position: absolute;
+  }
+  .nav__toggle-line::after {
+    bottom: 0.8rem;
+    position: absolute;
+  }
+
+  .nav__toggle-icon--open .nav__toggle-line {
+    background-color: transparent;
+  }
+
+  .nav__toggle-icon--open .nav__toggle-line::before {
+    transform: translateY(-0.8rem) rotate(-45deg);
+  }
+
+  .nav__toggle-icon--open .nav__toggle-line::after {
+    transform: translateY(0.8rem) rotate(45deg);
+  }
+}
