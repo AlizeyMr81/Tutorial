@@ -1,8 +1,21 @@
-// Data number
+
+// Number data type
 let message;
 message = 125;
-// Data string
+
+// String data type
 let user = "John";
-// Data boolean
-let isGreater = false; //or true
+
+// Boolean data type
+let isGreater = false;
+let bool2 = true;
+
+// Undefined data type
+let hey;
+
+// Null data type
+let by = null;
+
+
+
 
