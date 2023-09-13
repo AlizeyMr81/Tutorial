@@ -19,3 +19,13 @@ alert(counter);
 // Comma
 let z = (1 + 2, 5 + 8);
 alert(z);
+
+// Concatenation string or concat string
+let siteName = "EasyProgramming.com";
+let courseName = "JavaScript";
+
+// alert(siteName + "\n" + courseName);
+
+// \n => n = Newline
+
+alert("This is \"JavaScript\" from " + "EasyProgramming.com")
