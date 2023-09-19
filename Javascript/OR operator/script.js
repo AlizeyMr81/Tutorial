@@ -33,3 +33,9 @@ alert(str);
 // short-circuit
 true || alert(9393844190);
 false || alert("Sara");
+
+///////////////////////////////////////////////////////////
+
+// Important practice
+
+alert(alert(1) || 2 || alert(3));
