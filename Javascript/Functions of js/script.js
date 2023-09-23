@@ -10,14 +10,14 @@ function name(parameter1,parameter2,....parameterN) {
 
  */
 
-function showResult() {
-  let num1 = 5;
-  let num2 = 8;
-  let result = num1 + num2;
-  alert(result);
-}
+// function showResult() {
+//   let num1 = 5;
+//   let num2 = 8;
+//   let result = num1 + num2;
+//   alert(result);
+// }
 
-showResult();
+// showResult();
 
 // Local variables :
 
@@ -39,3 +39,12 @@ showResult();
 // }
 
 // showMessage();
+///////////////////////////////////////////////////////////// Next part : Parameters
+function showResult(result1, result2) {
+  alert("The first result is : " + result1);
+  alert("The seconde result is : " + result2);
+}
+
+let name = "Alireza";
+
+showResult(0 || 5, 7);
