@@ -10,14 +10,14 @@ function name(parameter1,parameter2,....parameterN) {
 
  */
 
-function showResult() {
-  let num1 = 5;
-  let num2 = 8;
-  let result = num1 + num2;
-  alert(result);
-}
+// function showResult() {
+//   let num1 = 5;
+//   let num2 = 8;
+//   let result = num1 + num2;
+//   alert(result);
+// }
 
-showResult();
+// showResult();
 
 // Local variables :
 
@@ -39,3 +39,74 @@ showResult();
 // }
 
 // showMessage();
+///////////////////////////////////////////////////////////// Next part : Parameters
+
+// function showResult(result1, result2) {
+//   alert("The first result is : " + result1);
+//   alert("The seconde result is : " + result2);
+// }
+
+// let name = "Alireza";
+
+// showResult(0 || 5, 7);
+
+////////////////////////////////////////////// Default Parameters :
+
+// function showMessage(userAge, userName = "Alireza") {
+//   alert("My age is : " + userAge);
+//   alert("My name is : " + userName);
+// }
+
+// showMessage(18);
+
+// Alternative default parameters
+
+// function showMessage(userAge, userName) {
+//   alert("My name is : " + userAge);
+//   if (userName === undefined) {
+//     userName = "My name is : " + "Alireza";
+//   }
+//   alert(userName);
+// }
+
+// showMessage(18);
+
+// ----------------------
+
+// function showMessage(userAge, userName) {
+//   alert("My name is : " + userAge);
+//   userName = userName || "My name is : " + "Alireza";
+//   alert(userName);
+// }
+
+// showMessage(18);
+
+// -------------------------
+
+// function showCount(count) {
+//   alert(count ?? "Empty");
+// }
+// showCount(null);
+// showCount();
+// showCount(0);
+
+/////////////////////////////////////////// Returning a value :
+
+// function checkAge(age) {
+//   if (age >= 18) {
+//     return true;
+//   } else {
+//     return confirm("Do you permission from your parents");
+//   }
+// }
+
+// let userAge = prompt("How old are you??", 18);
+
+// if (checkAge(userAge)) {
+//   alert("Access granted");
+// } else {
+//   alert("Access denied");
+// }
+
+////////////////////////////////////////////
+
