@@ -1,0 +1,14 @@
+html {
+  box-sizing: border-box;
+}
+* {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+.title {
+  width: 30rem;
+  margin: 0 auto;
+  text-align: center;
+}
