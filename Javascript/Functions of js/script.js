@@ -83,9 +83,30 @@ function name(parameter1,parameter2,....parameterN) {
 
 // -------------------------
 
-function showCount(count) {
-  alert(count ?? "Empty");
-}
-showCount(null);
-showCount();
-showCount(0);
+// function showCount(count) {
+//   alert(count ?? "Empty");
+// }
+// showCount(null);
+// showCount();
+// showCount(0);
+
+/////////////////////////////////////////// Returning a value :
+
+// function checkAge(age) {
+//   if (age >= 18) {
+//     return true;
+//   } else {
+//     return confirm("Do you permission from your parents");
+//   }
+// }
+
+// let userAge = prompt("How old are you??", 18);
+
+// if (checkAge(userAge)) {
+//   alert("Access granted");
+// } else {
+//   alert("Access denied");
+// }
+
+////////////////////////////////////////////
+
