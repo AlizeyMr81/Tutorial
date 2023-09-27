@@ -36,10 +36,22 @@ for (begin; condition ; step) {
 
 // ------------------------ Continue :
 
-for (let value = 0; value < 12; value++) {
-  if (value % 2 === 0) {
-    continue;
-  }
+// for (let value = 0; value < 12; value++) {
+//   if (value % 2 === 0) {
+//     continue;
+//   }
 
-  alert(value); // 1, then 3, 5, 7
+//   alert(value); // 1, then 3, 5, 7
+// }
+
+// ------------------------------------label for break / continue :
+
+outer: for (let i = 0; i < 3; i++) {
+  for (let j = 0; j < 3; j++) {
+    let input = prompt(`Value at coords (${i} , ${j})`, "");
+    if (!input) {
+      break outer;
+    }
+  }
 }
+alert("\"Done\"");
