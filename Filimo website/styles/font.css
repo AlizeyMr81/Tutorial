@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "IRANSansWeb(FaNum)";
+  src: url("../fonts/iransan/IRANSansWeb\(FaNum\).ttf");
+}
+
+@font-face {
+  font-family: "IRANSansWeb(FaNum) Bold";
+  src: url("../fonts/iransan/IRANSansWeb\(FaNum\)_Bold.ttf");
+}
+
+@font-face {
+  font-family: "IRANSansWeb(FaNum) Medium";
+  src: url("../fonts/iransan/IRANSansWeb\(FaNum\)_Medium.ttf");
+}
+
+@font-face {
+  font-family: "Gilroy-Bold";
+  src: url("../fonts/gilory/Gilroy-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Gilroy-Medium";
+  src: url("../fonts/gilory/Gilroy-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Gilroy-SemiBold";
+  src: url("../fonts/gilory/Gilroy-SemiBold.ttf");
+}
