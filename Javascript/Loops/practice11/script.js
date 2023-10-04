@@ -2,27 +2,17 @@
 
 // 2. عددی را از کاربر گرفته و تعداد ارقام آن را نمایش دهید
 
-// let userNumber = +prompt("Enter your number", 12);
-
-// let sum = 0;
-
-// while (userNumber > 0) {
-//   sum += Math.trunc(userNumber % 10);
-
-//   userNumber = Math.trunc(userNumber / 10);
-// }
-
-// alert(sum);
-
-// ----------------------------------------------------- Seconde practice
-
 let userNumber = +prompt("Enter your number", 12);
+let sum = 0;
+let count = 0;
 
-let count = 1;
-
-while (Math.trunc(userNumber / 10) != 0) {
-  userNumber = Math.trunc(userNumber / 10);
-  count++;
+if (userNumber == 0) {
+  count = 1;
+} else {
+  while (userNumber / 10 > 0) {
+    sum += Math.trunc(userNumber % 10);
+    userNumber = Math.trunc(userNumber / 10);
+    count++;
+  }
 }
-
-alert("Number Of Digits : " + count);
+alert("Sum Of Digits : " + sum + "\n\n" + "Count Of Digits : " + count);
