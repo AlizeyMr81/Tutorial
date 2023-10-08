@@ -15,4 +15,24 @@ let car = ["Benz", "BMW", "Audi"];
 
 // car[4] = 52;
 
-console.log(car[2]);
+// push/pop  shift/unshift
+
+let fruits = ["Apple", "Banana", "Orange"];
+
+console.log(fruits);
+
+console.log(fruits.pop());
+
+console.log(fruits);
+
+console.log(fruits.shift());
+
+console.log(fruits);
+
+console.log(fruits.push("Orange"));
+
+console.log(fruits);
+
+console.log(fruits.unshift("Apple"));
+
+console.log(fruits);
