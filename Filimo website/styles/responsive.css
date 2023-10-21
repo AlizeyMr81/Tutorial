@@ -5,9 +5,23 @@
 }
 
 @media (max-width: 992px) {
+  .menu {
+    gap: 3.5rem;
+  }
 }
 
 @media (max-width: 768px) {
+  .nav__profile {
+    display: none;
+  }
+  .menu {
+    display: none;
+  }
+  .nav__toggle-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 @media (max-width: 576px) {

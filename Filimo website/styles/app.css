@@ -1,8 +1,16 @@
+:root {
+  --text-color: #fff;
+}
+
 /* 
 
 --Reset Styles
 
 */
+
+a {
+  text-decoration: none;
+}
 
 /* 
 
@@ -34,4 +42,88 @@ html {
 
 body {
   font-size: 1.6rem;
+  font-family: "IRANSansWeb(FaNum)";
+}
+
+/* 
+
+--Header
+
+*/
+
+.header {
+  background-image: url("../images/unnamed.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 60rem;
+}
+
+.header__blur {
+  backdrop-filter: blur(0.8rem);
+  height: 100%;
+  padding-top: 1.5rem;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav__icon {
+}
+.nav__icon-photo {
+  width: 12rem;
+  height: 5rem;
+}
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+}
+.menu__list {
+  font-size: 1.4rem;
+}
+.menu__link {
+  color: var(--text-color);
+}
+.nav__profile {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 1rem;
+  align-items: center;
+}
+.nav__avatar {
+  width: 3.2rem;
+  height: 3.2rem;
+}
+.nav__search {
+}
+
+.nav__toggle-icon {
+  display: none;
+  width: 4rem;
+  height: 4rem;
+  cursor: pointer;
+}
+.nav__toggle-line {
+  position: relative;
+}
+.nav__toggle-line,
+.nav__toggle-line::after,
+.nav__toggle-line::before {
+  content: "";
+  background-color: #fcc537;
+  width: 3.5rem;
+  height: 0.4rem;
+  border-radius: 80rem;
+}
+
+.nav__toggle-line::after {
+  top: 1rem;
+  position: absolute;
+}
+.nav__toggle-line::before {
+  bottom: 1rem;
+  position: absolute;
 }
