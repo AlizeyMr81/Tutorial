@@ -76,10 +76,9 @@
 //   }
 //   return count;
 // }
-
 // alert(countVowel(prompt("Write a World to show Vowels")));
 
-// 8. Write a function to check if an input string is a palindrome
+//important 8. Write a function to check if an input string is a palindrome
 
 // function checkPalindrome(str) {
 //   str = str.toLowerCase();
@@ -108,16 +107,45 @@
 // }
 // getRandom();
 
-// 11.Write a function to find Factorial of a number
+// important 11.Write a function to find Factorial of a number
+// n! = (n-1) * n
+// function getFactorial(num) {
+//   if (num == 0) {
+//     return 0;
+//   }
+//   if (num == 1) {
+//     return 1;
+//   }
+//   return num * getFactorial(num - 1);
+// }
+// alert(getFactorial(+prompt("Enter a number and get factorial of your number")))
 
-function getFactorial(num) {
-  if (num == 1) {
-    return 1; // Termination condition
-  }
-  if (num == 0 || num < 0) {
-    return 0; // Termination condition
-  }
-  return num * getFactorial(num - 1);
-}
+// important 12. Write a function to find the count of a letter in a string
+// function letterCount(str, c) {
+//   let count = 0;
+//   str = str.toLowerCase();
+//   for (let i = 0; i < str.length; i++) {
+//     if (str.charAt(i) == c) {
+//       count++;
+//     }
+//   }
+//   return count;
+// }
+// alert(letterCount(prompt("Write your World"), prompt("Write your letter")));
 
-console.log(getFactorial(+prompt("Enter a number")));
+// important 13.Write a function to check if a number is Prime
+
+// function checkPrime(num, div = 2) {
+//   if (num <= 2) {
+//     return num == 2 ? true : false;
+//   }
+//   if (div * div > num) {
+//     return true;
+//   }
+//   if (num % div == 0) {
+//     return false;
+//   }
+
+//   return checkPrime(num, div + 1);
+// }
+// alert(checkPrime(+prompt("Enter your number")));
