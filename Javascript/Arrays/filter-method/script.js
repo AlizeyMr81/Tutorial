@@ -9,10 +9,10 @@ array.filter(function() {
 
 */
 
-let userName = ["John", "Row", "Kane", "Mir"];
+let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-let filteredUserName = userName.filter(function (userName) {
-  return userName.length > 3;
+let evenNumbers = numbers.filter(function (evenNumber) {
+  return evenNumber % 2 === 0
 });
 
-console.log("filteredUserName : " , filteredUserName);
+console.log("filteredUserName : ", evenNumbers);
