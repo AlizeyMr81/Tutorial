@@ -3,7 +3,8 @@
 let h1Elem = document.getElementById("title");
 
 // console.log(h1Elem.getAttribute("id"));
-h1Elem.setAttribute("class", "main_header");
+
+console.log(h1Elem.getAttribute("style"));
 
 /////////////////////////////////////////////////////
 
