@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="content">
+      <h1 class="title">Login Here</h1>
+      <form class="Form" action="#">
+        <input
+          class="input"
+          type="text"
+          placeholder="username"
+          onkeydown="userValidation()"
+        />
+        <span class="checkchare">Must have 12 characters (min)</span>
+        <input
+          class="input"
+          type="password"
+          placeholder="password"
+          onkeydown="passwordValidation()"
+        />
+        <span class="checkchare">Must have 8 characters (min)</span>
+        <button type="submit" id="btn" onclick="checkFormInputs()">
+          Submit
+        </button>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
