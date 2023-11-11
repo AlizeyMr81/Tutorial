@@ -1,0 +1,34 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+.wrapper {
+  width: 40rem;
+  margin: 0 auto;
+  margin-top: 8rem;
+  text-align: center;
+}
+
+.app-title {
+  color: red;
+}
+.btn {
+  cursor: pointer;
+  margin-top: 1rem;
+}
+.change-color {
+    color: green;
+}
