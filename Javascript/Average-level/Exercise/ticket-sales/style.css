@@ -1,0 +1,70 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: url("../../images/sky.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.app-title {
+  color: #ffca28;
+  font-size: 15rem;
+}
+
+.wrapper-form {
+  background-color: rgba(180, 169, 169, 0.244);
+  width: 150rem;
+  height: 50rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+}
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 120rem;
+  gap: 10rem;
+}
+
+.input,
+.select {
+  outline: none;
+  border: none;
+  border-radius: 0.4rem;
+  width: 55rem;
+  padding: 1.5rem;
+}
+
+.form__column1,
+.form__column2 {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.btn {
+  outline: none;
+  border: none;
+  padding: 1rem 4rem;
+  border-radius: 0.4rem;
+  font-size: 1.8rem;
+  background-color: yellow;
+  cursor: pointer;
+}
