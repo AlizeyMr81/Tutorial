@@ -1,0 +1,158 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+.container {
+  width: 100%;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+header {
+  margin-top: 2rem;
+}
+
+.nav {
+}
+
+.menu {
+  list-style-type: none;
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  justify-content: center;
+}
+.menu__list-iem {
+}
+.menu__links {
+  text-decoration: none;
+  color: #212121;
+}
+
+.nav__open-toggle .nav__toggle-line {
+  background-color: transparent;
+}
+
+.nav__open-toggle .nav__toggle-line::after {
+  transform: translateY(-0.7rem) rotate(-45deg);
+}
+
+.nav__open-toggle .nav__toggle-line::before {
+  transform: translateY(0.7rem) rotate(45deg);
+}
+
+@media (max-width: 1920px) {
+  .container {
+    max-width: 1300px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .container {
+    max-width: 1120px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 540px;
+  }
+
+  .wrapper {
+    position: fixed;
+    top: 0;
+    left: -17rem;
+    bottom: 0;
+    background-color: #1e88e5;
+    padding: 2rem 6rem 0 1.5rem;
+    transition: all ease-in 150ms;
+
+  }
+  .nav-open {
+    left: 0;
+  }
+  .menu {
+    flex-direction: column;
+    gap: 3rem;
+    align-items: normal;
+  }
+  .menu__links {
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+
+  .nav__toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4.5rem;
+    height: 4.5rem;
+    background-color: red;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+  }
+  .nav__toggle-line {
+    display: block;
+    width: 3rem;
+    height: 0.3rem;
+    background-color: black;
+    position: relative;
+    border-radius: 5rem;
+    transition: all ease-in 150ms;
+  }
+
+  .nav__toggle-line::after,
+  .nav__toggle-line::before {
+    content: "";
+    position: absolute;
+    width: 3rem;
+    height: 0.3rem;
+    background-color: black;
+    border-radius: 5rem;
+  }
+
+  .nav__toggle-line::after {
+    top: 0.7rem;
+    transition: all ease-in 100ms;
+  }
+
+  .nav__toggle-line::before {
+    bottom: 0.7rem;
+    transition: all ease-in 100ms;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    max-width: 100%;
+  }
+}
