@@ -1,0 +1,18 @@
+:root {
+  --color-them: #fff;
+}
+
+body {
+  background-color: var(--color-them);
+}
+
+.theme {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  cursor: pointer;
+}
+
+.bi {
+  font-size: 25px;
+}
